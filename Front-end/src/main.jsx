@@ -1,7 +1,7 @@
 //REACT
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Route, Switch, Router } from "react-router-dom"
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 //SASS
 import "./sass/main.scss";
@@ -24,12 +24,12 @@ root.render(
     <Router basename="/Portfolio">
       <div className="App">
         <Header />
-          <Switch>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/Projet/:Number" element={<Projet />} />
-            <Route path="*" element={<Error />} />
-          </Switch>
+          <Routes>
+            <Route path="/" component={<Home />} />
+            <Route path="/about" component={<About />} />
+            <Route path="/Projet/:Number" component={<Projet />} />
+            <Route path="*" component={<Error />} />
+          </Routes>
         <Footer />
       </div>
     </Router>
