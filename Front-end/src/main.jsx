@@ -26,7 +26,7 @@ root.render(
         <Header />
           <Routes>
             <Route path="/" component={<Home />} />
-            <Route path="/about" component={<About />} />
+            <Route path="/About" component={<About />} />
             <Route path="/Projet/:Number" component={<Projet />} />
             <Route path="*" component={<Error />} />
           </Routes>
