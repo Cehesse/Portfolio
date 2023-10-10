@@ -1,5 +1,5 @@
-//const baseURL = "../../datas/";
-const baseURL = "./";
+//const baseURL = "../src/datas/";
+const baseURL = "./assets/";
 
 // Fonction pour effectuer des appels à l"API
 
