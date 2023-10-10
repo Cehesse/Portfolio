@@ -6,6 +6,7 @@ var callAPI = async (apiEndpointurl) => {
     try{
         const response = await fetch(`${baseURL}${apiEndpointurl}`);
         const datas = await response.json();
+        //console.log(datas)
         return datas;
     }
     catch (error) {

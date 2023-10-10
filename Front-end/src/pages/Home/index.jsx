@@ -1,14 +1,13 @@
 //REACT
 import { Link } from "react-router-dom"
 import Masonry from 'react-masonry-css'
+import { useEffect, useState } from 'react';
 
 //COMPONENTS
 import Card from "../../components/Card"
 
 //API
 import callAPI from "../../api"
-var datas = await callAPI("projets.json")
-
 
 //FCT
 function Home() {
@@ -22,7 +21,24 @@ function Home() {
     699.98: 1,
   };
 
-    return (
+  const [datas, setData] = useState(null);
+
+  useEffect(() => {
+    async function fetchData() {
+      var datas = await callAPI("projets.json")
+      setData(datas);
+    }
+
+    fetchData();
+  }, []);
+
+  //console.log(datas)
+
+  if (datas === null) {
+    return <div>Loading...</div>;
+  }
+
+  return (
         <main className="home-page pages">
           <section id="about-section" className="about-section" >
             <Link to={`/About`}>
@@ -43,5 +59,4 @@ function Home() {
         </main> 
     )
   }
-
   export default Home
