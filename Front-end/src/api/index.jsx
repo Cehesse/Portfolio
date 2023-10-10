@@ -1,5 +1,5 @@
-//const baseURL = "../src/datas/";
-const baseURL = "https://cehesse.github.io/Portfolio/assets/";
+const baseURL = "../src/datas/"; //Local
+//const baseURL = "https://cehesse.github.io/Portfolio/assets/"; //Online Github Pages
 
 // Fonction pour effectuer des appels à l"API
 
@@ -7,7 +7,6 @@ var callAPI = async (apiEndpointurl) => {
     try{
         const response = await fetch(`${baseURL}${apiEndpointurl}`);
         const datas = await response.json();
-        //console.log(datas)
         return datas;
     }
     catch (error) {
