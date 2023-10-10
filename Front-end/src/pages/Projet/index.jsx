@@ -7,8 +7,6 @@ import callAPI from "../../api"
 
 //COMPONENTS
 import Carousel from "../../components/Carousel";
-import Collapse from "../../components/Collapse";
-
 
 function Projet() {
 
@@ -44,12 +42,8 @@ function Projet() {
                 return (<button key={index}>{links}</button>)
                 })}
           </div>
-            <div className="section_description_collapse">
-              <Collapse title={"Description"} text={data2.description} />
-            </div>
-            <div className="section_description_collapse">
-              <Collapse title={"Technologie"} text={data2.technology} />
-            </div>
+              <p className="section_description_text">{data2.description}</p>
+              <p className="section_description_text"> {data2.technology}</p>
           </div>
         </section>   
       </main> 

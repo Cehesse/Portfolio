@@ -9,7 +9,6 @@
     @include mixins.flex(column,center, center);
     row-gap: 16px;
     text-align: center;
-    margin-bottom: 24px;
     }
     &_title{
         color: variables.$color-tertiary;

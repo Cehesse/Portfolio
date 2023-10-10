@@ -5,26 +5,31 @@
 .about-section{
     @include mixins.flex(column,center,center);
     width: 100%;
-    margin: 48px 0;
-    background-color: variables.$color-primary;
-    border: solid 10px variables.$color-tertiary;
+    min-height: 400px;//A supp
+    @include mixins.bg-1();
+    border-top: solid 2px variables.$color-tertiary;
+    border-bottom: solid 2px variables.$color-tertiary;
 }
 
 .project-section{
     width: 100%;
-    margin: 48px 0;
-    background-color: variables.$color-primary;
+    @include mixins.bg-2();
     @include mixins.flex(column,center,center);
-    border-radius: 25px;
     column-gap: 5%;
     row-gap: 56px;
     padding: 24px 5%;
+    animation: 1s 0s cubic-bezier(0.96, 0.03, 0.65, 0.57) 1 normal both step;
+    &_title{
+        color: variables.$color-tertiary;
+        font-size: 32px;
+    }
 }
 
 .contact-section{
     @include mixins.flex(column,center,center);
+    min-height: 400px;//A supp
     width: 100%;
-    margin: 48px 0;
-    background-color: variables.$color-primary;
-    border: solid 10px variables.$color-tertiary;
+    @include mixins.bg-1();
+    border-top: solid 2px variables.$color-tertiary;
+    border-bottom: solid 2px variables.$color-tertiary;
 }

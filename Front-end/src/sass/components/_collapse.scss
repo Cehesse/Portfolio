@@ -7,9 +7,9 @@
     &_title{
         @include mixins.flex(row,space-between,center);
         width: 100%;
-        background: variables.$color-primary;
+        background: variables.$color-secondary;
         border-radius: 5px;
-        color: variables.$color-white;
+        color: variables.$color-primary;
         padding: 8px 16px;
         @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
             font-size: 13px;
@@ -17,8 +17,8 @@
         }
     &_text{
         width: 100%;
-        color: variables.$color-primary;
-        background: variables.$color-secondary;
+        color: variables.$color-secondary;
+        background: variables.$color-primary;
         padding: 16px 24px;
         font-size: variables.$font-size-medium;
         font-weight: variables.$font-weight-medium;
@@ -28,7 +28,7 @@
         }
             &--hidden{
             visibility: hidden;
-            color: variables.$color-primary;
+            color: variables.$color-secondary;
             height: 0;
             transition: all 0.05s;
             }

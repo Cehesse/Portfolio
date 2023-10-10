@@ -1,6 +1,17 @@
+@use "sass:map";
+@use "../abstracts/variables";
+
 @mixin flex($direction: row, $justify:center, $align: center){
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
+}
+
+@mixin bg-1(){
+    background: linear-gradient(45deg, variables.$color-primary 0%, variables.$color-white 100%);
+}
+
+@mixin bg-2(){
+    background: linear-gradient(45deg, variables.$color-primary 0%, variables.$color-secondary 100%);
 }

@@ -46,6 +46,7 @@ function Home() {
             </Link>
           </section>
           <section id="project-section" className="project-section" >
+            <h2 className="project-section_title">Projets</h2>
             <Masonry
               breakpointCols={breakpointColumnsObj}
               className="my-masonry-grid"

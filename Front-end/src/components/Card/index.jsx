@@ -9,7 +9,7 @@ export default function Card(props) {
 		<article>
 			<Link to={`/Projet/${props.id}`} className="card">
 				<img className="card_img"src={props.img} alt={props.title} />
-				<h2 className="card_title">{props.title}</h2>	
+				<h3 className="card_title">{props.title}</h3>	
 			</Link>
 		</article>
 	)

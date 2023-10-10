@@ -5,15 +5,14 @@
 .footer-section{
     @include mixins.flex(row,center,center);
     width: 100%;
-    background-color: variables.$color-primary;
-    border-radius: 25px;
-    padding: 32px 2%;
+    @include mixins.bg-2();
+    padding: 16px 2%;
     &_text {
         font-size: variables.$font-size-large;
         }
     &_logo{
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
     }
 
 }

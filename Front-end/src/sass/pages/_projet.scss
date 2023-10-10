@@ -27,7 +27,7 @@
             row-gap: 8px;
             & button{
                 color: variables.$color-white;
-                background-color: variables.$color-primary;
+                background: variables.$color-white;
                 border: variables.$color-primary;
                 border-radius: 10px;
                 padding: 4px 24px;
@@ -44,5 +44,8 @@
                 width: 100%;
                 padding: 16px 0;
             }
+        }
+        &_text{
+            color: darkblue;
         }
     }

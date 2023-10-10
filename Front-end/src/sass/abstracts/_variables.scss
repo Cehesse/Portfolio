@@ -1,11 +1,11 @@
 //Color
 
-$color-primary: hsl(0,0%,100%);
+$color-primary: #D3D3D3;
 $color-secondary: #00ABE4;
 $color-tertiary: #16315C;
 $color-white: hsl(0,0%,100%);
 $color-black: hsl(0,0%,0%);
-$color-bg:#D3D3D3;
+$color-bg: linear-gradient(45deg, hsl(0,0%,100%) 0%, #D3D3D3 100%);
 
 //Breakpoints map
 $breakpoints: (
@@ -24,4 +24,4 @@ $font-weight-medium: 500;
 $font-weight-normal: 300;
 
 //padding
-$padding-page-border: 3%;
+$padding-page-border: 0%;

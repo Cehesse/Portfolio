@@ -10,7 +10,7 @@
         font-weight: variables.$font-weight-blod;
     }
     &_link {
-        color: variables.$color-secondary;
+        color: variables.$color-tertiary;
             &:hover{
             text-decoration: 3px underline solid variables.$color-tertiary; 
             }
