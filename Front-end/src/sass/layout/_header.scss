@@ -1,0 +1,19 @@
+@use "sass:map";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.header-section{
+    @include mixins.flex(row,space-between,center);
+    width: 100%;
+    background-color: variables.$color-primary;
+    padding: 32px 2%;
+    border-radius: 25px;
+    &_img {
+        height: 125px;
+        width: 125px;
+        }
+    &_title {
+            display: none;
+        }
+
+}

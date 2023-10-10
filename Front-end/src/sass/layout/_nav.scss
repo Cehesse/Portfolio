@@ -1,0 +1,19 @@
+@use "sass:map";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.nav-section{
+    &_links{
+        @include mixins.flex(row,center,center);
+        column-gap: 32px;
+        font-size: variables.$font-size-medium;
+        font-weight: variables.$font-weight-blod;
+    }
+    &_link {
+        color: variables.$color-secondary;
+            &:hover{
+            text-decoration: 3px underline solid variables.$color-tertiary; 
+            }
+    }
+}
+

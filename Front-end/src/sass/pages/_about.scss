@@ -1,0 +1,20 @@
+@use "sass:map";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.about-page{
+    @include mixins.flex(column,center, center);
+    row-gap: 16px;
+    text-align: center;
+    color: variables.$color-white;
+    margin-bottom: 24px;
+    &_title{
+        font-size: 32px;
+    }
+    &_subtitle{
+        font-size: 32px;
+    }
+    &_link{
+        font-size: 32px;
+    }
+}

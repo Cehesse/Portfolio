@@ -1,0 +1,65 @@
+@use "sass:map";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.collapse{
+    @include mixins.flex(column,flex-start,flex-start);
+    &_title{
+        @include mixins.flex(row,space-between,center);
+        width: 100%;
+        background: variables.$color-primary;
+        border-radius: 5px;
+        color: variables.$color-white;
+        padding: 8px 16px;
+        @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
+            font-size: 13px;
+        }
+        }
+    &_text{
+        width: 100%;
+        color: variables.$color-primary;
+        background: variables.$color-secondary;
+        padding: 16px 24px;
+        font-size: variables.$font-size-medium;
+        font-weight: variables.$font-weight-medium;
+        animation: 0.2s cubic-bezier(1,0,1,0) 1 normal both collapse;
+        @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
+            font-size: 13px;
+        }
+            &--hidden{
+            visibility: hidden;
+            color: variables.$color-primary;
+            height: 0;
+            transition: all 0.05s;
+            }
+            &--item{
+            font-size: variables.$font-size-medium;
+            font-weight: variables.$font-weight-medium;
+            @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
+                font-size: 13px;
+            }
+            }
+        }
+    &_arrow--down{
+        transform: rotate(180deg);
+        }
+
+}
+
+@keyframes collapse {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+        transform: translateY(-5%);
+        transform-origin: 0 0;
+    }
+    75% {
+        transform: scaleY(0.5);
+        opacity: 0.5;
+        transform: translateY(0%);
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,34 @@
+@use "sass:map";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+#root{
+    @include mixins.flex(column,center,center);
+    box-sizing: border-box;
+    padding: 12px variables.$padding-page-border;
+    background-color: variables.$color-bg;
+}
+
+.App{
+    @include mixins.flex(column,center,center);
+    width: 100%;
+}
+
+.pages{
+    width: 100%;
+    @include mixins.flex(column,center,center);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: variables.$font;
+}
+
+a{
+    text-decoration: none;
+}

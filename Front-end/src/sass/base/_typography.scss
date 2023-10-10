@@ -1,0 +1,23 @@
+@use "sass:map";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+h1{
+    font-size: 48px;
+    font-weight: variables.$font-weight-medium;
+}
+
+h2{
+    font-size: variables.$font-size-large;
+    font-weight: variables.$font-weight-medium;
+}
+
+h3{
+    font-size: variables.$font-size-medium;
+    font-weight: variables.$font-weight-normal;
+}
+
+p{
+    font-size: variables.$font-size-small;
+    font-weight: variables.$font-weight-normal;
+}

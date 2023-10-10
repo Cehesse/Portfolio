@@ -1,0 +1,26 @@
+@use "sass:map";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.error-page{
+    width: 100%;
+    padding: 160px 20%;
+    &-s1{
+    @include mixins.flex(column,center, center);
+    row-gap: 16px;
+    text-align: center;
+    margin-bottom: 24px;
+    }
+    &_title{
+        color: variables.$color-tertiary;
+        font-size: 32px;
+    }
+    &_subtitle{
+        color: variables.$color-tertiary;
+        font-size: 32px;
+    }
+    &_link{
+        color: variables.$color-tertiary;
+        font-size: 32px;
+    }
+}

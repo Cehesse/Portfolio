@@ -1,0 +1,53 @@
+@use "sass:map";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.carousel{
+    @include mixins.flex(column,center,center);
+    position: relative;
+    width: 100%;
+    height: 200px;
+    @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
+        height: 225px;
+        margin-bottom: 16px;
+            }
+    &_img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+            & img{
+                height: 100%;
+                width: 100%;
+                border-radius: 25px;
+                object-fit: cover;
+                position: absolute;
+            }
+    }
+    &_arrow--left{
+        position: absolute;
+        z-index: 1;
+        left: 2%;
+        top: 38%;
+        @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
+            height: 24px;
+            width: 24px;
+        }
+        }
+    &_arrow-right{
+        position: absolute;
+        z-index: 1;
+        right: 2%;
+        top: 38%;
+        @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
+            height: 24px;
+            width: 24px;
+        }
+        }
+    &_num{
+        position: absolute;
+        z-index: 1;
+        right: 50%;
+        top: 90%;
+        color: variables.$color-white;
+    }
+}

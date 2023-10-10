@@ -1,0 +1,30 @@
+@use "sass:map";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.about-section{
+    @include mixins.flex(column,center,center);
+    width: 100%;
+    margin: 48px 0;
+    background-color: variables.$color-primary;
+    border: solid 10px variables.$color-tertiary;
+}
+
+.project-section{
+    width: 100%;
+    margin: 48px 0;
+    background-color: variables.$color-primary;
+    @include mixins.flex(column,center,center);
+    border-radius: 25px;
+    column-gap: 5%;
+    row-gap: 56px;
+    padding: 24px 5%;
+}
+
+.contact-section{
+    @include mixins.flex(column,center,center);
+    width: 100%;
+    margin: 48px 0;
+    background-color: variables.$color-primary;
+    border: solid 10px variables.$color-tertiary;
+}

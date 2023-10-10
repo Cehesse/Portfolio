@@ -1,0 +1,183 @@
+
+[
+	{
+		"id": "1",
+		"title": "Booki",
+		"cover": "../../src/assets/img/1/cover.jpeg",
+		"pictures": [
+			"../../src/assets/img/1/cover.jpeg",
+			"../../src/assets/img/1/cover.jpeg"
+		],
+		"description": "",
+		"links": [
+			"Github",
+			"Site"
+		],
+		"technology": [
+			"HTML",
+			"CSS"
+		]
+	},
+	{
+		"id": "2",
+		"title": "Id dolor libero curabitur",
+		"cover": "../../src/assets/img/1/cover.jpeg",
+		"pictures": [
+			"../../src/assets/img/1/cover.jpeg",
+			"../../src/assets/img/1/cover.jpeg"
+		],
+		"description": "",
+		"links": [
+			"Github",
+			"Site"
+		],
+		"technology": [
+			"HTML",
+			"CSS"
+		]
+	},
+	{
+		"id": "3",
+		"title": " nullam laoreet auctor sit consectetur nec ",
+		"cover": "../../src/assets/img/1/cover.jpeg",
+		"pictures": [
+			"../../src/assets/img/1/cover.jpeg",
+			"../../src/assets/img/1/cover.jpeg"
+		],
+		"description": "",
+		"links": [
+			"Github",
+			"Site"
+		],
+		"technology": [
+			"HTML",
+			"CSS"
+		]
+	},
+	{
+		"id": "4",
+		"title": "id lorem sagittis dolor auctor viverra ",
+		"cover": "../../src/assets/img/1/cover.jpeg",
+		"pictures": [
+			"../../src/assets/img/1/cover.jpeg",
+			"../../src/assets/img/1/cover.jpeg"
+		],
+		"description": "",
+		"links": [
+			"Github",
+			"Site"
+		],
+		"technology": [
+			"HTML",
+			"CSS"
+		]
+	},
+	{
+		"id": "5",
+		"title": "odio enim libero tincidunt amet nunc consectetur vel a condimentum  ",
+		"cover": "../../src/assets/img/1/cover.jpeg",
+		"pictures": [
+			"../../src/assets/img/1/cover.jpeg",
+			"../../src/assets/img/1/cover.jpeg"
+		],
+		"description": "",
+		"links": [
+			"Github",
+			"Site"
+		],
+		"technology": [
+			"HTML",
+			"CSS"
+		]
+	},
+	{
+		"id": "6",
+		"title": "adipiscing curabitur vel id euismod condimentum ipsum dolor in in ipsum elit viverra vitae ",
+		"cover": "../../src/assets/img/1/cover.jpeg",
+		"pictures": [
+			"../../src/assets/img/1/cover.jpeg",
+			"../../src/assets/img/1/cover.jpeg"
+		],
+		"description": "",
+		"links": [
+			"Github",
+			"Site"
+		],
+		"technology": [
+			"HTML",
+			"CSS"
+		]
+	},
+	{
+		"id": "7",
+		"title": "sit amet nunc euismod libero nec laoreet a",
+		"cover": "../../src/assets/img/1/cover.jpeg",
+		"pictures": [
+			"../../src/assets/img/1/cover.jpeg",
+			"../../src/assets/img/1/cover.jpeg"
+		],
+		"description": "",
+		"links": [
+			"Github",
+			"Site"
+		],
+		"technology": [
+			"HTML",
+			"CSS"
+		]
+	},
+	{
+		"id": "8",
+		"title": "Booki",
+		"cover": "../../src/assets/img/1/cover.jpeg",
+		"pictures": [
+			"../../src/assets/img/1/cover.jpeg",
+			"../../src/assets/img/1/cover.jpeg"
+		],
+		"description": "",
+		"links": [
+			"Github",
+			"Site"
+		],
+		"technology": [
+			"HTML",
+			"CSS"
+		]
+	},
+	{
+		"id": "9",
+		"title": "Booki",
+		"cover": "../../src/assets/img/1/cover.jpeg",
+		"pictures": [
+			"../../src/assets/img/1/cover.jpeg",
+			"../../src/assets/img/1/cover.jpeg"
+		],
+		"description": "",
+		"links": [
+			"Github",
+			"Site"
+		],
+		"technology": [
+			"HTML",
+			"CSS"
+		]
+	},
+	{
+		"id": "10",
+		"title": "Booki",
+		"cover": "../../src/assets/img/1/cover.jpeg",
+		"pictures": [
+			"../../src/assets/img/1/cover.jpeg",
+			"../../src/assets/img/1/cover.jpeg"
+		],
+		"description": "",
+		"links": [
+			"Github",
+			"Site"
+		],
+		"technology": [
+			"HTML",
+			"CSS"
+		]
+	}
+]
