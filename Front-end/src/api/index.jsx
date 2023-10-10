@@ -1,5 +1,5 @@
 //const baseURL = "./src/datas/";
-const baseURL = "./src/datas/";
+const baseURL = "https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/datas/";
 
 // Fonction pour effectuer des appels à l"API
 
