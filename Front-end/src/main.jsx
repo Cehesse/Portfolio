@@ -10,7 +10,7 @@ import "./sass/main.scss";
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Projet from "./pages/Projet"
-import Error from "./pages/Error"
+//import Error from "./pages/Error"
 
 
 //LAYOUT
@@ -28,9 +28,9 @@ root.render(
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/Projet/:Number" element={<Projet />} />
-            <Route path="*" element={<Error />} />
+            {/* <Route path="*" element={<Error />} /> */}
           </Routes>
-      <Footer />
+        <Footer />
       </div>
     </Router>
   </React.StrictMode>,
