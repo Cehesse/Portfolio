@@ -1,7 +1,9 @@
 //REACT
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Routes, Route } from 'react-router-dom';
+import { HashRouter } from "react-router-dom";
 
 //SASS
 import "./sass/main.scss";
@@ -21,7 +23,7 @@ import Footer from "./layout/Footer"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router basename="/Portfolio">
+    <HashRouter basename="/Portfolio">
       <div className="App">
         <Header />
           <Routes>
@@ -32,6 +34,6 @@ root.render(
           </Routes>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   </React.StrictMode>,
 );
