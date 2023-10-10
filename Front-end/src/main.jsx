@@ -27,7 +27,7 @@ root.render(
       <div className="App">
         <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/Portfolio" element={<Home />} />
             <Route path="/About" element={<About />} />
             <Route path="/Projet/:Number" element={<Projet />} />
             <Route path="*" element={<Error />} />
