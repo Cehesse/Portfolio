@@ -1,5 +1,5 @@
 //const baseURL = "../src/datas/";
-const baseURL = "http://cehess.github.io/Portfolio/api/";
+const baseURL = "http://cehess.github.io/Portfolio/assets/";
 
 // Fonction pour effectuer des appels à l"API
 
