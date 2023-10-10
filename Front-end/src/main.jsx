@@ -1,7 +1,7 @@
 //REACT
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Route, Routes, Router } from "react-router-dom"
+import { BrowserRouter as Route, Switch, Router } from "react-router-dom"
 
 //SASS
 import "./sass/main.scss";
@@ -24,12 +24,12 @@ root.render(
     <Router basename="/Portfolio">
       <div className="App">
         <Header />
-          <Routes>
+          <Switch>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/Projet/:Number" element={<Projet />} />
             <Route path="*" element={<Error />} />
-          </Routes>
+          </Switch>
         <Footer />
       </div>
     </Router>
