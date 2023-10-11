@@ -9,7 +9,7 @@
 }
 
 @mixin bg-1(){
-    background: linear-gradient(45deg, variables.$color-primary 0%, variables.$color-white 100%);
+    background-color: variables.$color-bg;
 }
 
 @mixin bg-2(){

@@ -51,7 +51,7 @@ function Home() {
               breakpointCols={breakpointColumnsObj}
               className="my-masonry-grid"
               columnClassName="my-masonry-grid_column">
-              {datas.map(data => {return (<Card key={data.id} id={data.id} title={data.title} img={data.cover} />)})}
+              {datas.map(data => {return (<Card key={data.id} id={data.id} title={data.title} text={data.text} img={data.cover} />)})}
             </Masonry>
           </section>
           <section id="contact-section" className="contact-section" >
