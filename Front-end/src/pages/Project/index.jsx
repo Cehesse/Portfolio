@@ -68,10 +68,10 @@ function Project() {
               </div>
               <div className="project-section_links">
                 <a href={projectdata.site} target="_blank" rel="noreferrer">
-                  <button className="project-section_link" >Site</button>
+                  <button className="project-section_link project-section_link--ext" >Site</button>
                 </a>
                 <a href={projectdata.github}  target="_blank" rel="noreferrer">
-                  <button className="project-section_link" >Github</button>
+                  <button className="project-section_link project-section_link--ext" >Github</button>
                 </a>
               </div>
         </div>
@@ -79,10 +79,10 @@ function Project() {
       <div className='project-section_nav'>
         <ul className='project-section_links'>
           <li>
-            <button className='project-section_link' onClick={goToPreviousProject}>Projet précédent</button>
+            <button className='project-section_link project-section_link--nav' onClick={goToPreviousProject}>Projet précédent</button>
           </li>      
           <li>
-            <button className='project-section_link' onClick={goToNextProject}>Projet suivant</button>
+            <button className=' project-section_link project-section_link--nav' onClick={goToNextProject}>Projet suivant</button>
           </li>
         </ul>
       </div> 

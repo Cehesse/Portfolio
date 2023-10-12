@@ -47,10 +47,10 @@
             color: variables.$color-tertiary;
             background: variables.$color-secondary;
             border: solid 2px variables.$color-tertiary;
-            border-radius: 5px;
+            border-radius: 25px;
             padding: 0.75rem;
-            height: 4rem;
-            width: 4rem;
+            height: 6rem;
+            width: 6rem;
             font-size: variables.$font-size-large;
         }
         &_links{
@@ -60,11 +60,19 @@
         }
         &_link{
             width: 15rem;
+            border-radius: 25px;
+            font-size: variables.$font-size-large;
+        }
+        &_link--ext{
             color: variables.$color-secondary;
             background: variables.$color-tertiary;
             border: solid 2px variables.$color-secondary;
-            border-radius: 25px;
             padding: 1rem;
-            font-size: variables.$font-size-large;
+        }
+        &_link--nav{
+            color: variables.$color-primary;
+            background: variables.$color-secondary;
+            border: solid 2px variables.$color-primary;
+            padding: 0.5rem;
         }
     }
