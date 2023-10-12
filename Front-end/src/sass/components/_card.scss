@@ -8,11 +8,10 @@
     width: 15rem;
     border-radius: 5px;
     overflow: hidden;
-    @include mixins.bg-1();
+    @include mixins.bg-2();
     border: 0.125rem solid variables.$color-tertiary;
     &_img{
         object-fit: cover;
-        opacity: 0.5;
         width: auto;
         height: auto;
         padding: 1rem;

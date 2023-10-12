@@ -14,10 +14,10 @@ function Home() {
 
   const breakpointColumnsObj = {
     default: 5,
-    1769.98: 5,
-    1569.98: 4,
-    1349.98: 3,
-    1039.98: 2,
+    1769.98: 4,
+    1569.98: 3,
+    1349.98: 2,
+    1039.98: 1,
     699.98: 1,
   };
 
@@ -46,7 +46,7 @@ function Home() {
             </Link>
           </section>
           <section id="projects-section" className="projects-section" >
-            <h2 className="projects-section_title">Projects</h2>
+            <h2 className="projects-section_title">Projets</h2>
             <Masonry
               breakpointCols={breakpointColumnsObj}
               className="my-masonry-grid"

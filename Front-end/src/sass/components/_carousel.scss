@@ -5,15 +5,15 @@
 .carousel{
     @include mixins.flex(column,center,center);
     position: relative;
-    width: 32rem;
-    height: 32rem;
+    width: 34rem;
+    height: 34rem;
     border: solid 0.125rem variables.$color-tertiary;
     &_img{
         position: absolute;
         @include mixins.w-h-100;
             & img{
                 @include mixins.w-h-100;
-                object-fit: scale-down;
+                object-fit: cover;
                 position: absolute;
             }
     }

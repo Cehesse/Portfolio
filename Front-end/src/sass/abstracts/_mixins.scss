@@ -9,7 +9,7 @@
 }
 
 @mixin bg-1(){
-    background-color: variables.$color-bg;
+    background: variables.$color-primary;
 }
 
 @mixin bg-2(){
