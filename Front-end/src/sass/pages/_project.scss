@@ -11,8 +11,12 @@
 }
 
 .project-section{
-        @include mixins.flex(row,center,center);
-        column-gap: 4rem;
+        @include mixins.flex(column,center,center);
+        row-gap: 4rem;
+        &_project{
+            @include mixins.flex(row,center,center);
+            column-gap: 4rem;
+        }
         &_description{
             @include mixins.flex(column,center,center);
             row-gap: 2rem;

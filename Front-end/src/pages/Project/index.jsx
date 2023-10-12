@@ -54,36 +54,38 @@ function Project() {
   return (
     <main className="project-page pages">
       <section className="project-section">
-      <div>
+      <div className="project-section_project">
+        <div className="project-section_carousel">
           <Carousel slides={projectdata.pictures} />
-          </div>
-          <div className="project-section_description">
-            <h2 className="project-section_title">{projectdata.title}</h2>
-            <p className="project-section_text">{projectdata.description}</p>
-            <div className="project-section_technologys">
-              {projectdata.technologys.map((technologys, index) => {
-                return (<img src={technologys} className="project-section_technology" key={index}></img>)
-                })}
-            </div>
-            <div className="project-section_links">
-              <a href={projectdata.site} target="_blank" rel="noreferrer">
-                <button className="project-section_link" >Site</button>
-              </a>
-              <a href={projectdata.github}  target="_blank" rel="noreferrer">
-                <button className="project-section_link" >Github</button>
-              </a>
-            </div>
-          </div>
-        <div className='project-section_nav'>
-          <ul className='project-section_links'>
-            <li>
-              <button className='project-section_link' onClick={goToPreviousProject}>Précédent</button>
-            </li>      
-            <li>
-              <button className='project-section_link' onClick={goToNextProject}>Suivant</button>
-            </li>
-          </ul>
-        </div> 
+        </div>
+        <div className="project-section_description">
+              <h2 className="project-section_title">{projectdata.title}</h2>
+              <p className="project-section_text">{projectdata.description}</p>
+              <div className="project-section_technologys">
+                {projectdata.technologys.map((technologys, index) => {
+                  return (<img src={technologys} className="project-section_technology" key={index}></img>)
+                  })}
+              </div>
+              <div className="project-section_links">
+                <a href={projectdata.site} target="_blank" rel="noreferrer">
+                  <button className="project-section_link" >Site</button>
+                </a>
+                <a href={projectdata.github}  target="_blank" rel="noreferrer">
+                  <button className="project-section_link" >Github</button>
+                </a>
+              </div>
+        </div>
+      </div>
+      <div className='project-section_nav'>
+        <ul className='project-section_links'>
+          <li>
+            <button className='project-section_link' onClick={goToPreviousProject}>Projet précédent</button>
+          </li>      
+          <li>
+            <button className='project-section_link' onClick={goToNextProject}>Projet suivant</button>
+          </li>
+        </ul>
+      </div> 
       </section>   
     </main> 
   )
