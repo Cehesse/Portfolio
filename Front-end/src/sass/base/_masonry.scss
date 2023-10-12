@@ -2,16 +2,16 @@
     display: -webkit-box; /* Not needed if autoprefixing */
     display: -ms-flexbox; /* Not needed if autoprefixing */
     display: flex;
-    margin-left: -30px; /* -30px gutter size offset */
+    margin-left: -2rem; /* -30px gutter size offset */
     width: auto;
     animation: 1s 0s cubic-bezier(0.96, 0.03, 0.65, 0.57) 1 normal both step;//ajout
   }
   .my-masonry-grid_column {
-    padding-left: 16px; /* 30px gutter size */
+    padding-left: 1rem; /* 30px gutter size */
     background-clip: padding-box;
   }
   
   /* Style your items */
   .my-masonry-grid_column > article { /* change div to reference your elements you put in <Masonry> */
-    margin-bottom: 16px; /* 30px gutter size */
+    margin-bottom: 1rem; /* 30px gutter size */
   }

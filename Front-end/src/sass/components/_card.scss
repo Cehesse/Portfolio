@@ -5,25 +5,25 @@
 .card{
     @include mixins.flex(column,center,center);
     position: relative;
-    width: 240px;
+    width: 15rem;
     border-radius: 5px;
     overflow: hidden;
     @include mixins.bg-1();
-    border: 2px solid variables.$color-tertiary;
+    border: 0.125rem solid variables.$color-tertiary;
     &_img{
         object-fit: cover;
         opacity: 0.5;
         width: auto;
         height: auto;
-        padding: 16px;
+        padding: 1rem;
         }
     &_title{
-        padding: 8px;
+        padding: 0.5rem;
         text-align: center;
         color: variables.$color-tertiary;
     }
     &_text{
-        padding: 8px;
+        padding: 0.5rem;
         text-align: center;
         color: variables.$color-secondary;
     }

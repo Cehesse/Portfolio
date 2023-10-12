@@ -3,23 +3,20 @@
 @use "../abstracts/variables";
 
 .error-page{
-    width: 100%;
-    padding: 160px 20%;
+    @include mixins.w-h-100;
+    padding: 10rem 20%;
     &-s1{
     @include mixins.flex(column,center, center);
-    row-gap: 16px;
+    row-gap: 1rem;
     text-align: center;
     }
     &_title{
         color: variables.$color-tertiary;
-        font-size: 32px;
     }
     &_subtitle{
         color: variables.$color-tertiary;
-        font-size: 32px;
     }
     &_link{
         color: variables.$color-tertiary;
-        font-size: 32px;
     }
 }

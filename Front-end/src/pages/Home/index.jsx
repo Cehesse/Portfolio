@@ -25,7 +25,7 @@ function Home() {
 
   useEffect(() => {
     async function fetchData() {
-      var datas = await callAPI("projets.json")
+      var datas = await callAPI("projects.json")
       setData(datas);
     }
 
@@ -45,8 +45,8 @@ function Home() {
               <h2 className="about-section_title">Lien About page</h2>
             </Link>
           </section>
-          <section id="project-section" className="project-section" >
-            <h2 className="project-section_title">Projets</h2>
+          <section id="projects-section" className="projects-section" >
+            <h2 className="projects-section_title">Projects</h2>
             <Masonry
               breakpointCols={breakpointColumnsObj}
               className="my-masonry-grid"

@@ -6,26 +6,18 @@
     @include mixins.flex(column,flex-start,flex-start);
     &_title{
         @include mixins.flex(row,space-between,center);
-        width: 100%;
+        @include mixins.w-h-100;
         background: variables.$color-secondary;
         border-radius: 5px;
         color: variables.$color-primary;
-        padding: 8px 16px;
-        @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
-            font-size: 13px;
-        }
+        padding: 0.5rem 1rem;
         }
     &_text{
-        width: 100%;
+        @include mixins.w-h-100;
         color: variables.$color-secondary;
         background: variables.$color-primary;
-        padding: 16px 24px;
-        font-size: variables.$font-size-medium;
-        font-weight: variables.$font-weight-medium;
+        padding: 1rem 0.125rem;
         animation: 0.2s cubic-bezier(1,0,1,0) 1 normal both collapse;
-        @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
-            font-size: 13px;
-        }
             &--hidden{
             visibility: hidden;
             color: variables.$color-secondary;
@@ -33,11 +25,7 @@
             transition: all 0.05s;
             }
             &--item{
-            font-size: variables.$font-size-medium;
             font-weight: variables.$font-weight-medium;
-            @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
-                font-size: 13px;
-            }
             }
         }
     &_arrow--down{

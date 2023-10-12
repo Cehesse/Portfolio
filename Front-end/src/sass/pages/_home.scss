@@ -4,32 +4,31 @@
 
 .about-section{
     @include mixins.flex(column,center,center);
-    width: 100%;
-    min-height: 400px;//A supp
+    @include mixins.w-h-100;
+    min-height: 16rem;//A supp
     @include mixins.bg-1();
-    border-top: solid 2px variables.$color-tertiary;
-    border-bottom: solid 2px variables.$color-tertiary;
+    @include mixins.border-section();
 }
 
-.project-section{
-    width: 100%;
+.projects-section{
+    @include mixins.w-h-100;
     @include mixins.bg-2();
     @include mixins.flex(column,center,center);
     column-gap: 5%;
-    row-gap: 56px;
-    padding: 24px 5%;
+    row-gap: 3.5rem;
+    padding: 0.125rem 5%;
     animation: 1s 0s cubic-bezier(0.96, 0.03, 0.65, 0.57) 1 normal both step;
     &_title{
         color: variables.$color-tertiary;
-        font-size: 32px;
+        font-size: 3rem;
+        padding: 1rem;
     }
 }
 
 .contact-section{
     @include mixins.flex(column,center,center);
-    min-height: 400px;//A supp
-    width: 100%;
+    min-height: 16rem;//A supp
+    @include mixins.w-h-100;
     @include mixins.bg-1();
-    border-top: solid 2px variables.$color-tertiary;
-    border-bottom: solid 2px variables.$color-tertiary;
+    @include mixins.border-section();
 }

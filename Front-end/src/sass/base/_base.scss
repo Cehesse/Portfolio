@@ -11,12 +11,13 @@
 
 .App{
     @include mixins.flex(column,center,center);
-    width: 100%;
+    @include mixins.w-h-100;
 }
 
 .pages{
-    width: 100%;
+    @include mixins.w-h-100;
     @include mixins.flex(column,center,center);
+    min-height: 80vh;
 }
 
 *,

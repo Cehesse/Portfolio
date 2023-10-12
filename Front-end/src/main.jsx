@@ -11,7 +11,7 @@ import "./sass/main.scss";
 //PAGES
 import Home from "./pages/Home"
 import About from "./pages/About"
-import Projet from "./pages/Projet"
+import Projects from "./pages/Project"
 import Error from "./pages/Error"
 
 
@@ -29,7 +29,7 @@ root.render(
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
-            <Route path="/Projet/:Number" element={<Projet />} />
+            <Route path="/Projects/:Number" element={<Projects />} />
             <Route path="*" element={<Error />} />
           </Routes>
         <Footer />
