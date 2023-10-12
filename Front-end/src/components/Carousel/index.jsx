@@ -21,7 +21,7 @@ export default function Carousel(props) {
 			{slidesLength > 1 && (<img src={arrowRight} alt="Fleche droite" onClick={nextSlide} className="carousel_arrow-right"/>)}
 			{props.slides.map((slide, index) => (
 				<div key={index} className="carousel_img">
-					{index === indexCurrent && <img src={slide} alt="L'appartement" />}
+					{index === indexCurrent && <img src={slide} alt="Photo" />}
 					{index === indexCurrent && slidesLength > 1 && <p className="carousel_num">{indexCurrent + 1}/{slidesLength}</p>}
 				</div>
 			))}
