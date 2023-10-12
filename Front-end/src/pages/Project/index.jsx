@@ -41,9 +41,10 @@ function Project() {
             <p className="project-section_text">{projectnum.description}</p>
             <div className="project-section_technologys">
               {projectnum.technologys.map((technologys, index) => {
-                return (<p className="project-section_technology" key={index}>{technologys}</p>)
+                return (<img src={technologys} className="project-section_technology" key={index}></img>)
                 })}
             </div>
+            
             <div className="project-section_links">
               <a href={projectnum.site} target="_blank" rel="noreferrer">
                 <button className="project-section_link" >Site</button>
