@@ -1,5 +1,5 @@
 //REACT
-import { useParams , Navigate} from "react-router-dom";
+import { useParams , Navigate } from "react-router-dom";
 import { useEffect, useState } from 'react';
 
 //API
@@ -23,16 +23,6 @@ function Project() {
     fetchData();
   }, [idProject]);
 
-  const handleClick = (destination) => {
-    switch (destination) {
-      case 'Site':
-        window.location.href = 'https://cehesse.github.io/Booki/';
-        break;
-      case 'Page 2':
-        window.location.href = 'https://github.com/Cehesse/Booki';
-    }
-  };
-  
   if (projectnum === null) {
     return <div>Loading...</div>;
   }
@@ -55,9 +45,12 @@ function Project() {
                 })}
             </div>
             <div className="project-section_links">
-              {projectnum.links.map((links, index) => {
-                return (<button onClick={() => handleClick({links})} className="project-section_link" key={index}>{links}</button>)
-                })}
+              <a href={projectnum.site} target="_blank" rel="noreferrer">
+                <button className="project-section_link" >Site</button>
+              </a>
+              <a href={projectnum.github}  target="_blank" rel="noreferrer">
+                <button className="project-section_link" >Github</button>
+              </a>
             </div>
           </div>
           

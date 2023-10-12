@@ -6,13 +6,12 @@
 		"text": "Trouvez votre hébergement pour des vacances de rêve",
 		"cover": "https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/logo.webp?raw=true",
 		"pictures": [
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/maquette.webp?raw=true",
 			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/maquette.webp?raw=true"
 		],
 		"description": "Booki est un projet de développement web conçu pour faciliter la recherche d'hébergements et d'activités dans une ville spécifique. En tant que développeuse Front-End, ma responsabilité était de convertir les maquettes conçues par l'UI designer en un site fonctionnel en utilisant les langages HTML et CSS.",
-		"links": [
-			"Site",
-			"Github"
-		],
+		"site": "https://cehesse.github.io/Booki/",
+		"github": "https://github.com/Cehesse/Booki",
 		"technologys": [
 			"HTML",
 			"CSS"
