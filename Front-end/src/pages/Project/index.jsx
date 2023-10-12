@@ -1,5 +1,5 @@
 //REACT
-import { useParams , Navigate } from "react-router-dom";
+import { useParams, Navigate, useNavigate } from "react-router-dom";
 import { useEffect, useState } from 'react';
 
 //API
@@ -9,54 +9,84 @@ import callAPI from "../../api"
 import Carousel from "../../components/Carousel";
 
 function Project() {
-
-  let idProject= useParams().Number;
-  const [projectnum, setData] = useState(null);
+  const idProject = useParams().Number;
+  const navigate = useNavigate();
+  const [projectdata, setData] = useState(null);
+  const [projectCount, setProjectCount] = useState(0);
 
   useEffect(() => {
     async function fetchData() {
-      var projectnum = await callAPI("projects.json")
-      projectnum = projectnum.find(data => data.id === idProject);
-      setData(projectnum);
+      const projects = await callAPI("projects.json");
+      const project = projects.find(data => data.id === idProject);
+      setProjectCount(projects.length);
+      setData(project);
     }
 
     fetchData();
   }, [idProject]);
 
-  if (projectnum === null) {
+  const goToNextProject = () => {
+    const nextId = parseInt(idProject, 10) + 1;
+    if (nextId > projectCount) {
+      navigate(`/Projects/1`);
+    } else {
+      navigate(`/Projects/${nextId}`);
+    }
+  };
+
+  const goToPreviousProject = () => {
+    const previousId = parseInt(idProject, 10) - 1;
+    if (previousId >= 1) {
+      navigate(`/Projects/${previousId}`);
+    } else {
+      navigate(`/Projects/${projectCount}`);
+    }
+  };
+
+  if (projectdata === null) {
     return <div>Loading...</div>;
   }
 
-  if (projectnum === undefined) {return(<Navigate to="/Erreur" /> )}
+  if (projectdata === undefined) {
+    return <Navigate to="/Erreur" />;
+  }
 
   return (
-      <main className="project-page pages">
-          
-        <section className="project-section">
-          <div>
-            <Carousel slides={projectnum.pictures} />
+    <main className="project-page pages">
+      <section className="project-section">
+      <div>
+          <Carousel slides={projectdata.pictures} />
           </div>
           <div className="project-section_description">
-            <h2 className="project-section_title">{projectnum.title}</h2>
-            <p className="project-section_text">{projectnum.description}</p>
+            <h2 className="project-section_title">{projectdata.title}</h2>
+            <p className="project-section_text">{projectdata.description}</p>
             <div className="project-section_technologys">
-              {projectnum.technologys.map((technologys, index) => {
+              {projectdata.technologys.map((technologys, index) => {
                 return (<img src={technologys} className="project-section_technology" key={index}></img>)
                 })}
             </div>
             <div className="project-section_links">
-              <a href={projectnum.site} target="_blank" rel="noreferrer">
+              <a href={projectdata.site} target="_blank" rel="noreferrer">
                 <button className="project-section_link" >Site</button>
               </a>
-              <a href={projectnum.github}  target="_blank" rel="noreferrer">
+              <a href={projectdata.github}  target="_blank" rel="noreferrer">
                 <button className="project-section_link" >Github</button>
               </a>
             </div>
           </div>
-          
-        </section>   
-      </main> 
+        <div className='project-section_nav'>
+          <ul className='project-section_links'>
+            <li>
+              <button className='project-section_link' onClick={goToPreviousProject}>Précédent</button>
+            </li>      
+            <li>
+              <button className='project-section_link' onClick={goToNextProject}>Suivant</button>
+            </li>
+          </ul>
+        </div> 
+      </section>   
+    </main> 
   )
 }
 
-  export default Project
+export default Project;
