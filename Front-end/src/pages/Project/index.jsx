@@ -44,7 +44,6 @@ function Project() {
                 return (<img src={technologys} className="project-section_technology" key={index}></img>)
                 })}
             </div>
-            
             <div className="project-section_links">
               <a href={projectnum.site} target="_blank" rel="noreferrer">
                 <button className="project-section_link" >Site</button>
