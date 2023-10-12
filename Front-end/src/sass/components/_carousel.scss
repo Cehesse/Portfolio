@@ -13,7 +13,7 @@
         @include mixins.w-h-100;
             & img{
                 @include mixins.w-h-100;
-                object-fit: cover;
+                object-fit: scale-down;
                 position: absolute;
             }
     }
