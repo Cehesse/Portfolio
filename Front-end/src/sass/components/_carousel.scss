@@ -8,12 +8,13 @@
     width: 34rem;
     height: 34rem;
     border: solid 0.125rem variables.$color-tertiary;
+    background-color: variables.$color-white;
     &_img{
         position: absolute;
         @include mixins.w-h-100;
             & img{
                 @include mixins.w-h-100;
-                object-fit: cover;
+                object-fit: scale-down;
                 position: absolute;
             }
     }
@@ -36,6 +37,8 @@
         z-index: 1;
         right: 50%;
         top: 90%;
-        color: variables.$color-white;
+        font-size: 2rem;
+        font-weight: variables.$font-weight-blod;
+        color: variables.$color-black;
     }
 }

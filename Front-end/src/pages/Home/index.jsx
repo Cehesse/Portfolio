@@ -33,7 +33,6 @@ function Home() {
     fetchData();
   }, []);
 
-  //console.log(datas)
 
   if (datas === null) {
     return <main>Loading...</main>;
