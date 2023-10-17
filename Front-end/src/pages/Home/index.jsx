@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 
 //COMPONENTS
 import Card from "../../components/Card"
+import Form from "../../components/Form"
 
 //API
 import callAPI from "../../api"
@@ -56,6 +57,7 @@ function Home() {
           </section>
           <section id="contact-section" className="contact-section" >
             <h2 className="contact-section_title">Contact</h2>
+            <Form></Form>
           </section>
         </main> 
     )
