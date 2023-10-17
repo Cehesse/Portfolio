@@ -5,7 +5,7 @@
 .card{
     @include mixins.flex(column,center,center);
     position: relative;
-    width: 15rem;
+    @include mixins.w-h-100;
     border-radius: 5px;
     overflow: hidden;
     border: 0.125rem solid variables.$color-secondary;
@@ -20,8 +20,7 @@
   ;
     &_img{
         object-fit: cover;
-        width: auto;
-        height: auto;
+        @include mixins.w-h-100;
         padding: 1rem;
         }
     &_title{
@@ -29,6 +28,7 @@
         text-align: center;
         font-weight: variables.$font-weight-blod;
         color: variables.$color-secondary;
+        display: none;//A supprimer si réutilisation
     }
     &_text{
         padding: 0.5rem;
