@@ -8,6 +8,8 @@
     padding: 0 variables.$padding-page-border;
     //background: variables.$color-bg;
     background-image: url("https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .App{
