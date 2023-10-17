@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 //IMG
-import Logo from "../../assets/img/logo.png"
+import Logo from "../../assets/img/logo.webp"
 
 //LAYOUT
 import Navbar from "../Navbar"
