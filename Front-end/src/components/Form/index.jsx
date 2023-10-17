@@ -11,7 +11,7 @@ const Form = () => {
     const handleSubmit = (e) => {
       e.preventDefault();
 
-      const UserId = process.env.REACT_APP_EMAILJS_USERID;
+      const UserId = import.meta.env.VITE_APP_EMAILJS_USERID;
 
       emailjs
         .sendForm(
@@ -39,26 +39,32 @@ const Form = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Nom:</label>
-          <input type="text" name="nom" value={nom} onChange={(e) => setNom(e.target.value)} />
+      <form className="form" onSubmit={handleSubmit}>
+        <div className="form_items">
+          <div className="form_identity">
+            <div className="form_item">
+              <label className="form_label">Nom:  <sub className="form_required">*</sub></label>
+              <input className="form_input" type="text" name="nom" value={nom} onChange={(e) => setNom(e.target.value)} required/>
+            </div>
+            <div className="form_item">
+              <label className="form_label">Prénom:  <sub className="form_required">*</sub></label>
+              <input className="form_input" type="text" name="prenom" value={prenom} onChange={(e) => setPrenom(e.target.value)} required/>
+            </div>
+            <div className="form_item">
+              <label className="form_label">Adresse e-mail:  <sub className="form_required">*</sub></label>
+              <input className="form_input" type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value) } placeholder="adresse@exemple.com" required/>
+            </div>
+          </div>
+          <div>
+            <div className="form_item">
+              <label className="form_label">Contenu du message:  <sub className="form_required">*</sub></label>
+              <textarea className="form_input form_area" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required/>
+            </div>
+          </div>
         </div>
-        <div>
-          <label>Prénom:</label>
-          <input type="text" name="prenom" value={prenom} onChange={(e) => setPrenom(e.target.value)} />
-        </div>
-        <div>
-          <label>Adresse e-mail:</label>
-          <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        </div>
-        <div>
-          <label>Contenu du message:</label>
-          <textarea name="message" value={message} onChange={(e) => setMessage(e.target.value)} />
-        </div>
-        <button type="submit">Envoyer</button>
+        <button className="form_button" type="submit">Envoyer</button>
       </form>
-      <div>{confirmation}</div>
+      <div className="form_confirmation">{confirmation}</div>
     </div>
   );
 };

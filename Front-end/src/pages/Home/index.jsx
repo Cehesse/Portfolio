@@ -43,11 +43,11 @@ function Home() {
         <main className="home-page pages">
           <section id="about-section" className="about-section" >
             <Link to={`/About`}>
-              <h2 className="about-section_title">Lien About page</h2>
+              <h2 className="home-page_section-title">Lien About page</h2>
             </Link>
           </section>
           <section id="projects-section" className="projects-section" >
-            <h2 className="projects-section_title">Projets</h2>
+            <h2 className="home-page_section-title">Projets</h2>
             <Masonry
               breakpointCols={breakpointColumnsObj}
               className="my-masonry-grid"
@@ -56,7 +56,7 @@ function Home() {
             </Masonry>
           </section>
           <section id="contact-section" className="contact-section" >
-            <h2 className="contact-section_title">Contact</h2>
+            <h2 className="home-page_section-title">Contact</h2>
             <Form></Form>
           </section>
         </main> 

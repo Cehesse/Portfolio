@@ -2,6 +2,15 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
 
+.home-page{
+    &_section-title{
+        color: variables.$color-tertiary;
+        font-size: 3rem;
+        padding: 1rem;
+        margin-top: 1rem
+    }
+}
+
 .about-section{
     @include mixins.flex(column,center,center);
     @include mixins.w-h-100;
@@ -15,11 +24,6 @@
     column-gap: 5%;
     row-gap: 3.5rem;
     animation: 0.3s 0s cubic-bezier(0.96, 0.03, 0.65, 0.57) 1 normal both step;
-    &_title{
-        color: variables.$color-tertiary;
-        font-size: 3rem;
-        padding: 1rem;
-    }
 }
 
 .contact-section{
