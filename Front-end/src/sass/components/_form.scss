@@ -5,7 +5,7 @@
 .form {
     @include mixins.flex(column,center,center);
     row-gap: 2rem;
-    padding: 3rem;
+    padding: 2rem;
     &_required{
         color: red;
     }
@@ -50,11 +50,11 @@
     4.5px 4.5px 18.9px -20px rgba(0, 0, 0, 0.26),
     12px 12px 151px -20px rgba(0, 0, 0, 0.67);
     }
+    &_confirmation {
+        text-align: center;
+        color: variables.$color-primary;
+      }
   }
   
-  .form_confirmation {
-    margin-top: 20px;
-    text-align: center;
-    color: #27ae60;
-  }
+
   
