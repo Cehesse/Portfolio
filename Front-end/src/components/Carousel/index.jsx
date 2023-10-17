@@ -3,8 +3,8 @@ import { useState } from "react"
 import PropTypes from 'prop-types';
 
 //IMG
-import arrowRight from "../../assets/img/arrowright.png"
-import arrowLeft from "../../assets/img/arrowleft.png"
+import arrowRight from "../../assets/img/arrow_webp.png"
+import arrowLeft from "../../assets/img/arrow_webp.png"
 
 //FCT
 export default function Carousel(props) {

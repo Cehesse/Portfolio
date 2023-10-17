@@ -3,7 +3,7 @@ import { useState } from "react";
 import PropTypes from 'prop-types';
 
 //IMG
-import arrow from "../../assets/img/arrow.png";
+import arrow from "../../assets/img/arrow.webp";
 
 //FCT
 export default function Collapse(props) {
