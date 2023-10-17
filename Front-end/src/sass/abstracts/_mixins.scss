@@ -8,14 +8,6 @@
     align-items: $align;
 }
 
-@mixin bg-1(){
-    background: variables.$color-primary;
-}
-
-@mixin bg-2(){
-    background: linear-gradient(45deg, variables.$color-primary 0%, variables.$color-secondary 100%);
-}
-
 @mixin border-section(){
     border-top: solid 0.125rem variables.$color-tertiary;
     border-bottom: solid 0.125rem variables.$color-tertiary;

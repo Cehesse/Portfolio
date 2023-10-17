@@ -45,12 +45,11 @@
             @include mixins.flex(row,center,center);
             @include mixins.w-h-100;
             color: variables.$color-tertiary;
-            background: variables.$color-secondary;
             border: solid 2px variables.$color-tertiary;
-            border-radius: 25px;
+            border-radius: 29% 71% 52% 48% / 53% 19% 81% 47% ;
             padding: 0.75rem;
-            height: 6rem;
-            width: 6rem;
+            height: 5rem;
+            width: 5rem;
             font-size: variables.$font-size-large;
         }
         &_links{
@@ -65,13 +64,11 @@
         }
         &_link--ext{
             color: variables.$color-secondary;
-            background: variables.$color-tertiary;
             border: solid 2px variables.$color-secondary;
             padding: 0.75rem;
         }
         &_link--nav{
             color: variables.$color-primary;
-            background: variables.$color-secondary;
             border: solid 2px variables.$color-primary;
             padding: 0.5rem;
         }

@@ -5,7 +5,6 @@
 .header-section{
     @include mixins.flex(row,space-between,center);
     @include mixins.w-h-100;
-    @include mixins.bg-2();
     height: 10vh;
     padding: 1rem 2%;
     &_img {
