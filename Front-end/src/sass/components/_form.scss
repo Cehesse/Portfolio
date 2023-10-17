@@ -43,8 +43,12 @@
     border-radius: 25px; 
     width: 12rem; 
     color: variables.$color-tertiary;
+    background-color: variables.$color-primary;
     border: solid 2px variables.$color-tertiary;
     padding: 0.75rem;
+    box-shadow:
+    4.5px 4.5px 18.9px -20px rgba(0, 0, 0, 0.26),
+    12px 12px 151px -20px rgba(0, 0, 0, 0.67);
     }
   }
   
