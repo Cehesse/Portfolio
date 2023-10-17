@@ -5,11 +5,7 @@
 .about-section{
     @include mixins.flex(column,center,center);
     @include mixins.w-h-100;
-    min-height: 16rem;//A supp
     @include mixins.border-section();
-    background-image: url("../../assets/img/logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .projects-section{
@@ -18,6 +14,7 @@
     padding-bottom: 4rem;
     column-gap: 5%;
     row-gap: 3.5rem;
+    background-image: url("../../assets/img/low-poly-grid-haikei.png");
     animation: 0.3s 0s cubic-bezier(0.96, 0.03, 0.65, 0.57) 1 normal both step;
     &_title{
         color: variables.$color-tertiary;

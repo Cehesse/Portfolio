@@ -6,9 +6,7 @@
     @include mixins.flex(column,center,center);
     box-sizing: border-box;
     padding: 0 variables.$padding-page-border;
-    //background: green;// variables.$color-bg;
-    background: linear-gradient(to right, transparent, mistyrose),
-    url("../../assets/img/logo.png");
+    //background: variables.$color-bg;
 }
 
 .App{
