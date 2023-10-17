@@ -44,7 +44,7 @@ function Project() {
   };
 
   if (projectdata === null) {
-    return <div>Loading...</div>;
+    return <main>Loading...</main>;
   }
 
   if (projectdata === undefined) {

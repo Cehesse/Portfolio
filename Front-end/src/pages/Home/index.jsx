@@ -35,7 +35,7 @@ function Home() {
   //console.log(datas)
 
   if (datas === null) {
-    return <div>Loading...</div>;
+    return <main>Loading...</main>;
   }
 
   return (
