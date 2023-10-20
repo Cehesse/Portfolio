@@ -67,12 +67,16 @@ function Project() {
                   })}
               </div>
               <div className="project-section_links">
+              {projectdata.site !== "" && (
                 <a href={projectdata.site} target="_blank" rel="noreferrer">
                   <button className="project-section_link project-section_link--ext" >Site</button>
                 </a>
-                <a href={projectdata.github}  target="_blank" rel="noreferrer">
-                  <button className="project-section_link project-section_link--ext" >Github</button>
-                </a>
+              )}
+              {projectdata.github !== "" && (
+                    <a href={projectdata.github} target="_blank" rel="noreferrer">
+                      <button className="project-section_link project-section_link--ext">Github</button>
+                     </a>
+                )}
               </div>
         </div>
       </div>
