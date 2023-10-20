@@ -12,7 +12,7 @@ export default function Navbar() {
 					<Link to='/#about-section' className='nav-section_link' >Présentation</Link>
 				</li>
 				<li>
-					<Link to='/#project-section' className='nav-section_link' >Projets</Link>
+					<Link to='/#projects-section' className='nav-section_link' >Projets</Link>
 				</li>
 				<li>
 					<Link to='/#contact-section' className='nav-section_link' >Contact</Link>
