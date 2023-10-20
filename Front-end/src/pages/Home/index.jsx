@@ -41,8 +41,9 @@ function Home() {
   return (
         <main className="home-page pages">
           <section id="about-section" className="about-section" >
+          <h2 className="home-page_section-title">Présentation</h2>
             <Link to={`/About`}>
-              <h2 className="home-page_section-title">Lien About page</h2>
+              <p>Mes formations</p>
             </Link>
           </section>
           <section id="projects-section" className="projects-section" >
