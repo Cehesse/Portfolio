@@ -7,7 +7,6 @@
 		"cover": "https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/1/Logo.webp",
 		"pictures": [
 			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/Desktop.webp?raw=true",
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/Tablette.webp?raw=true",
 			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/Mobile.webp?raw=true"
 		],
 		"description": "Booki est un projet de développement web conçu pour faciliter la recherche d'hébergements et d'activités dans une ville spécifique. En tant que développeur Front-End, ma responsabilité était de convertir les maquettes conçues par l'UI designer en un site fonctionnel en utilisant les langages HTML et CSS.",
@@ -20,100 +19,39 @@
 	},
 	{
 		"id": "2",
-		"title": "BOOKI",
-		"text": "Trouvez votre hébergement pour des vacances de rêve",
-		"cover": "https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/1/Logo.webp",
+		"title": "OHMYFOOD",
+		"text": "Réservez le menu qui vous convient",
+		"cover": "https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/2/Logo.webp",
 		"pictures": [
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/desktop.webp?raw=true",
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/tablette.webp?raw=true",
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/mobile.webp?raw=true"
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/2/Desktop.webp?raw=true",
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/2/Mobile.webp?raw=true",
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/2/Mobile_2.webp?raw=true"
 		],
-		"description": "Booki est un projet de développement web conçu pour faciliter la recherche d'hébergements et d'activités dans une ville spécifique. En tant que développeur Front-End, ma responsabilité était de convertir les maquettes conçues par l'UI designer en un site fonctionnel en utilisant les langages HTML et CSS.",
-		"site": "https://cehesse.github.io/Booki/",
-		"github": "https://github.com/Cehesse/Booki",
+		"description": "OhMyFood est une jeune entreprise dans le secteur de la restauration qui ambitionne de mettre en place une plateforme web répertoriant les menus proposés par des restaurants haut de gamme. En tant que dévellopeur, ma mission consistait à concrétiser le site en suivant les directives fournies par l'équipe de conception UX, qui avait élaboré des maquettes pour le projet.",
+		"site": "https://cehesse.github.io/Oh_my_food/",
+		"github": "https://github.com/Cehesse/Oh_my_food",
 		"technologys": [
 			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/HTML5.webp?raw=true",
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/CSS3.webp?raw=true"
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/CSS3.webp?raw=true",
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/SASS.webp?raw=true"
 		]
 	},
 	{
 		"id": "3",
-		"title": "BOOKI",
-		"text": "Trouvez votre hébergement pour des vacances de rêve",
-		"cover": "https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/1/Logo.webp",
+		"title": "SOPHIE BLUEL",
+		"text": "Architecte d'intérieur",
+		"cover": "https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/3/Logo.webp",
 		"pictures": [
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/maquette.webp?raw=true"
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/3/Homepage.webp?raw=true",
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/3/Homepage_edit.webp?raw=true",
 		],
-		"description": "Booki est un projet de développement web conçu pour faciliter la recherche d'hébergements et d'activités dans une ville spécifique. En tant que développeur Front-End, ma responsabilité était de convertir les maquettes conçues par l'UI designer en un site fonctionnel en utilisant les langages HTML et CSS.",
-		"site": "https://cehesse.github.io/Booki/",
-		"github": "https://github.com/Cehesse/Booki",
+		"description": "Le site Sophia Bluel offre une expertise dans le domaine de l'architecture et de la décoration d'intérieur. Mon implication a englobé la conception de la page de présentation des projets de l'architecte, avec des options de tri par catégorie. J'ai élaboré une modale permettant à l'architecte de gérer l'ajout ou la suppression de projets. L'utilisation de JavaScript a été essentielle pour générer dynamiquement les éléments en interagissant avec une API, autorisant ainsi la récupération, l'ajout et la suppression de projets.",
+		"site": "https://cehesse.github.io/Portfolio_Sophie_bluel/",
+		"github": "https://github.com/Cehesse/Portfolio_Sophie_bluel",
 		"technologys": [
 			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/HTML5.webp?raw=true",
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/CSS3.webp?raw=true"
-		]
-	},
-	{
-		"id": "4",
-		"title": "BOOKI",
-		"text": "Trouvez votre hébergement pour des vacances de rêve",
-		"cover": "https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/1/Logo.webp",
-		"pictures": [
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/maquette.webp?raw=true"
-		],
-		"description": "Booki est un projet de développement web conçu pour faciliter la recherche d'hébergements et d'activités dans une ville spécifique. En tant que développeur Front-End, ma responsabilité était de convertir les maquettes conçues par l'UI designer en un site fonctionnel en utilisant les langages HTML et CSS.",
-		"site": "https://cehesse.github.io/Booki/",
-		"github": "https://github.com/Cehesse/Booki",
-		"technologys": [
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/HTML5.webp?raw=true",
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/CSS3.webp?raw=true"
-		]
-	},
-	{
-		"id": "5",
-		"title": "BOOKI",
-		"text": "Trouvez votre hébergement pour des vacances de rêve",
-		"cover": "https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/1/Logo.webp",
-		"pictures": [
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/maquette.webp?raw=true"
-		],
-		"description": "Booki est un projet de développement web conçu pour faciliter la recherche d'hébergements et d'activités dans une ville spécifique. En tant que développeur Front-End, ma responsabilité était de convertir les maquettes conçues par l'UI designer en un site fonctionnel en utilisant les langages HTML et CSS.",
-		"site": "https://cehesse.github.io/Booki/",
-		"github": "https://github.com/Cehesse/Booki",
-		"technologys": [
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/HTML5.webp?raw=true",
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/CSS3.webp?raw=true"
-		]
-	},
-	{
-		"id": "6",
-		"title": "BOOKI",
-		"text": "Trouvez votre hébergement pour des vacances de rêve",
-		"cover": "https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/1/Logo.webp",
-		"pictures": [
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/maquette.webp?raw=true"
-		],
-		"description": "Booki est un projet de développement web conçu pour faciliter la recherche d'hébergements et d'activités dans une ville spécifique. En tant que développeur Front-End, ma responsabilité était de convertir les maquettes conçues par l'UI designer en un site fonctionnel en utilisant les langages HTML et CSS.",
-		"site": "https://cehesse.github.io/Booki/",
-		"github": "https://github.com/Cehesse/Booki",
-		"technologys": [
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/HTML5.webp?raw=true",
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/CSS3.webp?raw=true"
-		]
-	},
-	{
-		"id": "7",
-		"title": "BOOKI",
-		"text": "Trouvez votre hébergement pour des vacances de rêve",
-		"cover": "https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/1/Logo.webp",
-		"pictures": [
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/1/maquette.webp?raw=true"
-		],
-		"description": "Booki est un projet de développement web conçu pour faciliter la recherche d'hébergements et d'activités dans une ville spécifique. En tant que développeur Front-End, ma responsabilité était de convertir les maquettes conçues par l'UI designer en un site fonctionnel en utilisant les langages HTML et CSS.",
-		"site": "https://cehesse.github.io/Booki/",
-		"github": "https://github.com/Cehesse/Booki",
-		"technologys": [
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/HTML5.webp?raw=true",
-			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/CSS3.webp?raw=true"
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/CSS3.webp?raw=true",
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/JS.webp?raw=true"
 		]
 	}
 ]
