@@ -1,5 +1,5 @@
-//const baseURL = "../src/datas/"; //Local
-const baseURL = "https://cehesse.github.io/Portfolio/assets/"; //Online Github Pages
+const baseURL = "../src/datas/"; //Local
+//const baseURL = "https://cehesse.github.io/Portfolio/assets/"; //Online Github Pages
 
 // Fonction pour effectuer des appels à l"API
 
