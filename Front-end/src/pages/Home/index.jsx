@@ -14,9 +14,9 @@ import callAPI from "../../api"
 function Home() {
 
   const breakpointColumnsObj = {
-    default: 5,
-    1769.98: 4,
-    1569.98: 3,
+    default: 3,
+    1769.98: 3,
+    1569.98: 2,
     1349.98: 2,
     1039.98: 1,
     699.98: 1,

@@ -70,5 +70,23 @@
 			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/REACT.webp?raw=true",
 			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/SASS.webp?raw=true"
 		]
+	},
+	{
+		"id": "5",
+		"title": "ARGENTBANK",
+		"text": "Chez vous, partout et ailleurs",
+		"cover": "https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/5/Logo.webp",
+		"pictures": [
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/5/Home.webp?raw=true",
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/5/User.webp?raw=true"
+		],
+		"description": "En tant que développeur front-end chez Argent Bank, j'ai créé un tableau de bord utilisateur avec authentification utilisant React et Redux. J'ai migré un site HTML/CSS existant vers cette nouvelle plateforme. J'ai géré l'authentification avec JWT et Axios pour des appels API sécurisés, ainsi que les données via Redux pour que les utilisateurs puissent consulter et modifier leurs informations. Swagger a simplifié la conception et la documentation des API, renforçant la sécurité et les performances. J'ai défini les routes pour les transactions dans Swagger, optimisé les images pour améliorer les performances, et créé des composants réutilisables pour une meilleure pratique de développement.",
+		"site": "https://cehesse.github.io/ArgentBank/",
+		"github": "https://github.com/Cehesse/ArgentBank",
+		"technologys": [
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/REACT.webp?raw=true",
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/REDUX.webp?raw=true",
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/SASS.webp?raw=true"
+		]
 	}
 ]
