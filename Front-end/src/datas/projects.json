@@ -35,5 +35,23 @@
 			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/CSS3.webp?raw=true",
 			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/SASS.webp?raw=true"
 		]
+	},
+	{
+		"id": "3",
+		"title": "SOPHIE BLUEL",
+		"text": "Architecte d'intérieur",
+		"cover": "https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/3/Logo.webp",
+		"pictures": [
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/3/Homepage.webp?raw=true",
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/3/Homepage_edit.webp?raw=true",
+		],
+		"description": "Le site Sophia Bluel offre une expertise dans le domaine de l'architecture et de la décoration d'intérieur. Mon implication a englobé la conception de la page de présentation des projets de l'architecte, avec des options de tri par catégorie. J'ai élaboré une modale permettant à l'architecte de gérer l'ajout ou la suppression de projets. L'utilisation de JavaScript a été essentielle pour générer dynamiquement les éléments en interagissant avec une API, autorisant ainsi la récupération, l'ajout et la suppression de projets.",
+		"site": "https://cehesse.github.io/Portfolio_Sophie_bluel/",
+		"github": "https://github.com/Cehesse/Portfolio_Sophie_bluel",
+		"technologys": [
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/HTML5.webp?raw=true",
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/CSS3.webp?raw=true",
+			"https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/JS.webp?raw=true"
+		]
 	}
 ]
