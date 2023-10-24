@@ -4,7 +4,7 @@ function About() {
     {
       id: 1,
       titre: "Formation integrateur web",
-      lieu: "Openclassroom",
+      lieu: "Openclassrooms",
       annee: "2023"
     },
     {
@@ -114,44 +114,46 @@ function About() {
       },
     ];
 
-  return (
-    <main className="about-page pages">
-      <h2 className="about-page_title">Formations</h2>
-      <ul className="formation_list">
-        {formations.map(formation => (
-          <li key={formation.id} className="formation_item">
-            <h3>{formation.titre}</h3>
-            <p>{formation.lieu}</p>
-            <p>{formation.annee}</p>
-          </li>
-        ))}
-      </ul>
-      <h2 className="about-page_title">Compétences</h2>
-      <ul className="competenceslogos_list">
-        {competenceslogos.map(competenceslogos => (
-          <li key={competenceslogos.id} className="competenceslogos_item">
-            <img src={competenceslogos.icone} className="competenceslogos_icon" alt="logo" title="logo"/>
-          </li>
-        ))}
-      </ul>
-      <div className="competences_text">
-        <ul className="competences_list">
-            {competences.map(competences => (
-              <li key={competences.id}>
-                <p className="competences_item">{competences.nom}</p>
-              </li>
+    return (
+      <main className="about-page pages">
+        <h2 className="about-page_title" aria-label="Formations">Formations</h2>
+        <ul className="formation_list">
+          {formations.map(formation => (
+            <li key={formation.id} className="formation_item">
+              <h3>{formation.titre}</h3>
+              <p>{formation.lieu}</p>
+              <p>{formation.annee}</p>
+            </li>
           ))}
         </ul>
-        <ul className="competences_list">
-            {atouts.map(atouts => (
-              <li key={atouts.id}>
-                <p className="competences_item">{atouts.nom}</p>
-              </li>
+        <h2 className="about-page_title" aria-label="Compétences">Compétences</h2>
+        <ul className="competenceslogos_list">
+          {competenceslogos.map(competence => (
+            <li key={competence.id} className="competenceslogos_item">
+              <img src={competence.icone} className="competenceslogos_icon" alt="Logo" title="Logo" aria-label="Logo de compétence" />
+            </li>
           ))}
         </ul>
-    </div>
-    </main>
-  );
-}
-
-export default About;
+        <div className="competences_text">
+          <h3 aria-label="Compétences techniques">Compétences techniques</h3>
+          <ul className="competences_list">
+            {competences.map(competence => (
+              <li key={competence.id}>
+                <p className="competences_item">{competence.nom}</p>
+              </li>
+            ))}
+          </ul>
+          <h3 aria-label="Atouts">Atouts</h3>
+          <ul className="competences_list">
+            {atouts.map(atout => (
+              <li key={atout.id}>
+                <p className="competences_item">{atout.nom}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </main>
+    );
+  }
+  
+  export default About;

@@ -1,11 +1,7 @@
-//REACT
 import { useParams, Navigate, useNavigate } from "react-router-dom";
 import { useEffect, useState } from 'react';
 
-//API
-import callAPI from "../../api"
-
-//COMPONENTS
+import callAPI from "../../api";
 import Carousel from "../../components/Carousel";
 
 function Project() {
@@ -53,46 +49,82 @@ function Project() {
 
   return (
     <main className="project-page pages">
-      <section className="project-section">
-      <div className="project-section_project">
-        <div className="project-section_carousel">
-          <Carousel slides={projectdata.pictures} />
-        </div>
-        <div className="project-section_description">
-              <h2 className="project-section_title">{projectdata.title}</h2>
-              <p className="project-section_text">{projectdata.description}</p>
-              <div className="project-section_technologys">
-                {projectdata.technologys.map((technologys, index) => {
-                  return (<img src={technologys} className="project-section_technology" key={index} alt="technologie web" title="technologie web"></img>)
-                  })}
-              </div>
-              <div className="project-section_links">
+      <section className="project-section" aria-label="Détails du projet">
+        <div className="project-section_project">
+          <div className="project-section_carousel" aria-label="Images du projet">
+            <Carousel slides={projectdata.pictures} />
+          </div>
+          <div className="project-section_description">
+            <h2 className="project-section_title" aria-label="Titre du projet">
+              {projectdata.title}
+            </h2>
+            <p className="project-section_text" aria-label="Description du projet">
+              {projectdata.description}
+            </p>
+            <div className="project-section_technologys">
+              {projectdata.technologys.map((technologys, index) => (
+                <img
+                  src={technologys}
+                  className="project-section_technology"
+                  key={index}
+                  alt="technologie web"
+                  title="technologie web"
+                />
+              ))}
+            </div>
+            <div className="project-section_links" aria-label="Liens externes du projet">
               {projectdata.site !== "" && (
-                <a href={projectdata.site} target="_blank" rel="noreferrer" title="Site">
-                  <button className="project-section_link project-section_link--ext">Site</button>
+                <a
+                  href={projectdata.site}
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Site"
+                >
+                  <button className="project-section_link project-section_link--ext">
+                    Site
+                  </button>
                 </a>
               )}
               {projectdata.github !== "" && (
-                    <a href={projectdata.github} target="_blank" rel="noreferrer" title="Github">
-                      <button className="project-section_link project-section_link--ext">Github</button>
-                     </a>
-                )}
-              </div>
+                <a
+                  href={projectdata.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  title="GitHub"
+                >
+                  <button className="project-section_link project-section_link--ext">
+                    GitHub
+                  </button>
+                </a>
+              )}
+            </div>
+          </div>
         </div>
-      </div>
-      <div className='project-section_nav'>
-        <ul className='project-section_links'>
-          <li>
-            <button className='project-section_link project-section_link--nav' onClick={goToPreviousProject}>Projet précédent</button>
-          </li>      
-          <li>
-            <button className=' project-section_link project-section_link--nav' onClick={goToNextProject}>Projet suivant</button>
-          </li>
-        </ul>
-      </div> 
-      </section>   
-    </main> 
-  )
+        <div className='project-section_nav' aria-label="Navigation entre les projets">
+          <ul className='project-section_links'>
+            <li>
+              <button
+                className='project-section_link project-section_link--nav'
+                onClick={goToPreviousProject}
+                title="Projet précédent"
+              >
+                Projet précédent
+              </button>
+            </li>
+            <li>
+              <button
+                className='project-section_link project-section_link--nav'
+                onClick={goToNextProject}
+                title="Projet suivant"
+              >
+                Projet suivant
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  );
 }
 
 export default Project;

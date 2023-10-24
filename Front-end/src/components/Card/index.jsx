@@ -8,7 +8,14 @@ export default function Card(props) {
 	return (
 		<article>
 			<Link to={`/Projects/${props.id}`} className="card" title="Projet">
-				<img className="card_img"src={props.img} alt={props.title} title="Logo"/>
+				<img
+					className="card_img"
+					src={props.img}
+					alt={props.title}
+					title="Logo"
+					role="img" // Indiquer que l'image est décorative
+					aria-label={props.title} // Donner un label à l'image
+				/>
 				{/* <h3 className="card_title">{props.title}</h3> */}
 				<h3 className="card_text">{props.text}</h3>	
 			</Link>

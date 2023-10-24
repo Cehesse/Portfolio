@@ -38,7 +38,7 @@
             font-size: 4rem;
             text-align: center;
             @media screen and (max-width: map-get(variables.$breakpoints, tablette)){
-                font-size: 3rem;
+                font-size: 2rem;
             }
         }
         &_text{
@@ -84,7 +84,7 @@
             font-size: variables.$font-size-large;
             cursor: pointer;
             @media screen and (max-width: map-get(variables.$breakpoints, tablette)){
-                width: 7rem;
+                width: 10rem;
                 font-size: variables.$font-size-medium;
             }
             @media screen and (max-width: map-get(variables.$breakpoints, tablette)){
