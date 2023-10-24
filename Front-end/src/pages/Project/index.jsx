@@ -63,7 +63,7 @@ function Project() {
               <p className="project-section_text">{projectdata.description}</p>
               <div className="project-section_technologys">
                 {projectdata.technologys.map((technologys, index) => {
-                  return (<img src={technologys} className="project-section_technology" key={index}></img>)
+                  return (<img src={technologys} className="project-section_technology" key={index} alt="technologie web"></img>)
                   })}
               </div>
               <div className="project-section_links">

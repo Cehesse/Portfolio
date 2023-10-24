@@ -45,26 +45,26 @@ const Form = () => {
         <div className="form_items">
           <div className="form_identity">
             <div className="form_item">
-              <label className="form_label">Nom:  <sub className="form_required">*</sub></label>
-              <input className="form_input" type="text" name="nom" value={nom} onChange={(e) => setNom(e.target.value)} required/>
+              <label htmlFor="nom" className="form_label" >Nom:  <sub className="form_required">*</sub></label>
+              <input className="form_input" id="nom" type="text" name="nom" value={nom} onChange={(e) => setNom(e.target.value)} required/>
             </div>
             <div className="form_item">
-              <label className="form_label">Prénom:  <sub className="form_required">*</sub></label>
-              <input className="form_input" type="text" name="prenom" value={prenom} onChange={(e) => setPrenom(e.target.value)} required/>
+              <label htmlFor="prenom" className="form_label">Prénom:  <sub className="form_required">*</sub></label>
+              <input className="form_input" id="prenom" type="text" name="prenom" value={prenom} onChange={(e) => setPrenom(e.target.value)} required/>
             </div>
             <div className="form_item">
-              <label className="form_label">Adresse e-mail:  <sub className="form_required">*</sub></label>
-              <input className="form_input" type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value) } placeholder="adresse@exemple.com" required/>
+              <label htmlFor="email" className="form_label">Adresse e-mail:  <sub className="form_required">*</sub></label>
+              <input className="form_input" id="email" type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value) } placeholder="adresse@exemple.com" required/>
             </div>
             <div className="form_item">
-              <label className="form_label">Numéro de téléphone:  </label>
-              <input className="form_input" type="tel" name="num" value={num} onChange={(e) => setNum(e.target.value) }/>
+              <label htmlFor="num" className="form_label">Numéro de téléphone:  </label>
+              <input className="form_input" id="num" type="tel" name="num" value={num} onChange={(e) => setNum(e.target.value) }/>
             </div>
           </div>
           <div>
             <div className="form_item">
-              <label className="form_label">Contenu du message:  <sub className="form_required">*</sub></label>
-              <textarea className="form_input form_area" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required/>
+              <label htmlFor="message" className="form_label">Contenu du message:  <sub className="form_required">*</sub></label>
+              <textarea className="form_input form_area" id="message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required/>
             </div>
           </div>
         </div>
