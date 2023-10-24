@@ -21,17 +21,19 @@ import Footer from "./layout/Footer"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HashRouter basename="/Portfolio">
-      <div className="App">
-        <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/About" element={<About />} />
-            <Route path="/Projects/:Number" element={<Projects />} />
-            <Route path="*" element={<Error />} />
-          </Routes>
-        <Footer />
-      </div>
-    </HashRouter>
+      <HashRouter>
+        <HashRouter basename="/Portfolio">
+        <div className="App">
+          <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/About" element={<About />} />
+              <Route path="/Projects/:Number" element={<Projects />} />
+              <Route path="*" element={<Error />} />
+            </Routes>
+          <Footer />
+        </div>
+        </HashRouter>
+      </HashRouter>
   </React.StrictMode>,
 );
