@@ -60,14 +60,18 @@ function About() {
       },
       {
         id: 7,
-        icone: "https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/GITHUB.webp?raw=true"
+        icone: "https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/GIT.webp?raw=true"
       },
       {
         id: 8,
-        icone: "https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/VSCODE.webp?raw=true"
+        icone: "https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/GITHUB.webp?raw=true"
       },
       {
         id: 9,
+        icone: "https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/VSCODE.webp?raw=true"
+      },
+      {
+        id: 10,
         icone: "https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/techno-logo/FIGMA.webp?raw=true"
       }
     ];

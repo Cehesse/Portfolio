@@ -5,6 +5,7 @@ const Form = () => {
   const [nom, setNom] = useState("");
   const [prenom, setPrenom] = useState("");
   const [email, setEmail] = useState("");
+  const [num, setNum] = useState("");
   const [message, setMessage] = useState("");
   const [confirmation, setConfirmation] = useState("");
 
@@ -26,6 +27,7 @@ const Form = () => {
             setNom("");
             setPrenom("");
             setEmail("");
+            setNum("");
             setMessage("");
             setConfirmation("Message envoyé")
           },
@@ -53,6 +55,10 @@ const Form = () => {
             <div className="form_item">
               <label className="form_label">Adresse e-mail:  <sub className="form_required">*</sub></label>
               <input className="form_input" type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value) } placeholder="adresse@exemple.com" required/>
+            </div>
+            <div className="form_item">
+              <label className="form_label">Numéro de téléphone:  </label>
+              <input className="form_input" type="tel" name="num" value={num} onChange={(e) => setNum(e.target.value) }/>
             </div>
           </div>
           <div>

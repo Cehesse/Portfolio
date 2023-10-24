@@ -9,6 +9,7 @@
     padding: 1rem 2%;
     @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
         @include mixins.flex(column,center,center);
+        padding: 0;
         row-gap: 1rem;
     }
     &_img {

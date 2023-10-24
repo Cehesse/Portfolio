@@ -18,11 +18,8 @@ function Home() {
 
   const breakpointColumnsObj = {
     default: 3,
-    1769.98: 3,
-    1569.98: 3,
-    1349.98: 2,
     1023.98: 2,
-    699.98: 1,
+    767.98: 1,
   };
 
   const [datas, setData] = useState(null);

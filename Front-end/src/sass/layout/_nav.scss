@@ -9,8 +9,10 @@
         font-size: variables.$font-size-medium;
         font-weight: variables.$font-weight-blod;
         @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
-            @include mixins.flex(column,center,center);
-            row-gap: 1rem;
+            @include mixins.flex(row,center,center);
+            column-gap: 1.5rem;
+            font-size: variables.$font-size-small;
+            padding: 1rem 0;
         }
     }
     &_link {
