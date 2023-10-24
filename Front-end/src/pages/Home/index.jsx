@@ -43,10 +43,10 @@ function Home() {
           <section id="about-section" className="about-section" >
           <h2 className="home-page_section-title">Présentation</h2>
             <div className="about-section_content">
-                <img className="about-section_image" src={profil} alt="Votre Portrait" />
+                <img className="about-section_image" src={profil} alt="Mon portrait" title="Mon portrait"/>
                 <div className="about-section_description">
                   <p className="about-section_text">Je suis un développeur en reconversion, passionné par les technologies web. J'ai suivi une formation sur Openclassroom, je me suis lancé dans des projets concrets pour mettre en pratique mes compétences. Mon portfolio reflète mon parcours et mes projets.</p>
-                  <Link to={`/About`}>
+                  <Link to={`/About`} title="Page de présentation">
                   <h3 className="about-section_link">Mon parcours</h3>
                   </Link>
                 </div>

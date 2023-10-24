@@ -11,7 +11,7 @@ import Navbar from "../Navbar"
 export default function Header() {
 	return (
 		<header className="header-section">
-			<Link to="/" ><img src={Logo} className="header-section_img" alt="Steven Chatellet" /></Link>
+			<Link to="/" title="Acceuil"><img src={Logo} className="header-section_img" alt="Steven Chatellet" title="Steven Chatellet" /></Link>
 			<h1 className="header-section_title">Steven Chatellet Portofolio</h1>
 			<Navbar />
 		</header>

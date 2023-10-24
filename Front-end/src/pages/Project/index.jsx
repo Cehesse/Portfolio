@@ -63,17 +63,17 @@ function Project() {
               <p className="project-section_text">{projectdata.description}</p>
               <div className="project-section_technologys">
                 {projectdata.technologys.map((technologys, index) => {
-                  return (<img src={technologys} className="project-section_technology" key={index} alt="technologie web"></img>)
+                  return (<img src={technologys} className="project-section_technology" key={index} alt="technologie web" title="technologie web"></img>)
                   })}
               </div>
               <div className="project-section_links">
               {projectdata.site !== "" && (
-                <a href={projectdata.site} target="_blank" rel="noreferrer">
-                  <button className="project-section_link project-section_link--ext" >Site</button>
+                <a href={projectdata.site} target="_blank" rel="noreferrer" title="Site">
+                  <button className="project-section_link project-section_link--ext">Site</button>
                 </a>
               )}
               {projectdata.github !== "" && (
-                    <a href={projectdata.github} target="_blank" rel="noreferrer">
+                    <a href={projectdata.github} target="_blank" rel="noreferrer" title="Github">
                       <button className="project-section_link project-section_link--ext">Github</button>
                      </a>
                 )}

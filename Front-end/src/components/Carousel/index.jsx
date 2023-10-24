@@ -17,11 +17,11 @@ export default function Carousel(props) {
 
 	return (
 		<div className="carousel">
-			{slidesLength > 1 && ( <img src={arrowLeft} alt="Fleche gauche" onClick={prevSlide} className="carousel_arrow--left"/>)}
-			{slidesLength > 1 && (<img src={arrowRight} alt="Fleche droite" onClick={nextSlide} className="carousel_arrow-right"/>)}
+			{slidesLength > 1 && ( <img src={arrowLeft} alt="Fleche gauche" onClick={prevSlide} className="carousel_arrow--left" title="fleche"/>)}
+			{slidesLength > 1 && (<img src={arrowRight} alt="Fleche droite" onClick={nextSlide} className="carousel_arrow-right"title="fleche"/>)}
 			{props.slides.map((slide, index) => (
 				<figure key={index} className="carousel_img">
-					{index === indexCurrent && <img src={slide} alt="Photo" />}
+					{index === indexCurrent && <img src={slide} alt="photo" title="photo"/>}
 					{index === indexCurrent && slidesLength > 1 && <p className="carousel_num">{indexCurrent + 1}/{slidesLength}</p>}
 				</figure>
 			))}

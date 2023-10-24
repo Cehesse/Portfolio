@@ -7,8 +7,8 @@ export default function Card(props) {
 
 	return (
 		<article>
-			<Link to={`/Projects/${props.id}`} className="card">
-				<img className="card_img"src={props.img} alt={props.title} />
+			<Link to={`/Projects/${props.id}`} className="card" title="Projet">
+				<img className="card_img"src={props.img} alt={props.title} title="Logo"/>
 				{/* <h3 className="card_title">{props.title}</h3> */}
 				<h3 className="card_text">{props.text}</h3>	
 			</Link>

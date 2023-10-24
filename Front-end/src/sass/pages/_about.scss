@@ -6,10 +6,8 @@
     @include mixins.flex(column,center, center);
     row-gap: 1rem;
     text-align: center;
-    color: variables.$color-white;
     &_title{
         @include mixins.w-h-100;
-        color: variables.$color-tertiary;
         font-size: 4rem;
         text-align: center;
         @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
@@ -56,7 +54,6 @@
         padding: 2rem;
         column-gap: 2rem;
         row-gap: 2rem;
-        color: variables.$color-primary;
         flex-wrap: wrap;
     }
     &_icon{

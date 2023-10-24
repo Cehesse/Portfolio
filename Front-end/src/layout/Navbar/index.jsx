@@ -6,16 +6,16 @@ export default function Navbar() {
 		<nav className='nav-section'>
 			<ul className='nav-section_links'>
 				<li>
-					<Link to='/' className='nav-section_link' >Acceuil</Link>
+					<Link to='/' className='nav-section_link' title="Acceuil">Acceuil</Link>
 				</li>			
 				<li>
-					<Link to='/#about-section' className='nav-section_link' >Présentation</Link>
+					<Link to='/#about-section' className='nav-section_link' title="Présentation">Présentation</Link>
 				</li>
 				<li>
-					<Link to='/#projects-section' className='nav-section_link' >Projets</Link>
+					<Link to='/#projects-section' className='nav-section_link' title="Projets">Projets</Link>
 				</li>
 				<li>
-					<Link to='/#contact-section' className='nav-section_link' >Contact</Link>
+					<Link to='/#contact-section' className='nav-section_link' title="Contact">Contact</Link>
 				</li>
 			</ul>
 		</nav>

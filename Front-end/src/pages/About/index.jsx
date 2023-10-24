@@ -130,7 +130,7 @@ function About() {
       <ul className="competenceslogos_list">
         {competenceslogos.map(competenceslogos => (
           <li key={competenceslogos.id} className="competenceslogos_item">
-            <img src={competenceslogos.icone} className="competenceslogos_icon" />
+            <img src={competenceslogos.icone} className="competenceslogos_icon" alt="logo" title="logo"/>
           </li>
         ))}
       </ul>
