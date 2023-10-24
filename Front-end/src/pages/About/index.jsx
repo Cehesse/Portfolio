@@ -135,7 +135,6 @@ function About() {
           ))}
         </ul>
         <div className="competences_text">
-          <h3 aria-label="Compétences techniques">Compétences techniques</h3>
           <ul className="competences_list">
             {competences.map(competence => (
               <li key={competence.id}>
@@ -143,7 +142,6 @@ function About() {
               </li>
             ))}
           </ul>
-          <h3 aria-label="Atouts">Atouts</h3>
           <ul className="competences_list">
             {atouts.map(atout => (
               <li key={atout.id}>
