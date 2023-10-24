@@ -16,18 +16,33 @@
     @include mixins.flex(column,center,center);
     @include mixins.w-h-100;
     @include mixins.border-section();
-    &__content{
+    &_content{
         @include mixins.flex(row,center,center);
-        width: 70%;
-        column-gap: 24px;
+        padding: 3rem 0;
+        width: 80%;
     }
-    &__image{
-        width: 50%;
-        height: 420px;
+    &_description{
+        @include mixins.flex(column,center,center);
+        row-gap: 4rem;
     }
-    &__text{
-        width: 40%;
+    &_image{
+        width: 30rem;
+        height: 30rem;
+    }
+    &_text{
+        width: 60%;
         font-size: variables.$font-size-large;
+    }
+    &_link{
+        @include mixins.flex(row,flex-end,flex-end);
+        font-size: variables.$font-size-large;
+        color: variables.$color-tertiary;
+        border-radius: 25px; 
+        color: variables.$color-tertiary;
+        background-color: variables.$color-primary;
+        border: solid 2px variables.$color-tertiary;
+        padding: 1rem;
+        cursor: pointer;
     }
 }
 
