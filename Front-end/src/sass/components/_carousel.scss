@@ -9,6 +9,10 @@
     height: 34rem;
     border: solid 0.125rem variables.$color-tertiary;
     background-color: variables.$color-white;
+    @media screen and (max-width: map-get(variables.$breakpoints, tablette)){
+        width: 23rem;
+        height: 23rem;
+    }
     &_img{
         position: absolute;
         @include mixins.w-h-100;
