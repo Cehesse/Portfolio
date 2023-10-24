@@ -42,8 +42,12 @@ function Home() {
         <main className="home-page pages">
           <section id="about-section" className="about-section" >
           <h2 className="home-page_section-title">Présentation</h2>
+            <div className="about-section__content">
+                <img className="about-section__image" src="lien_de_votre_photo_portrait.jpg" alt="Votre Portrait" />
+                <p className="about-section__text">Je suis un nouveau développeur en reconversion passionné les technologies web. J'ai suivi une formation sur Openclassroom, je me suis lancé dans des projets concrets pour mettre en pratique mes compétences. Mon portfolio reflète mon parcours et mes projets. Explorez mes réalisations dans la section projets ou mon parcours.</p>
+            </div>
             <Link to={`/About`}>
-              <p>Mes formations</p>
+              <p className="about-section__link">Mon parcours</p>
             </Link>
           </section>
           <section id="projects-section" className="projects-section" >

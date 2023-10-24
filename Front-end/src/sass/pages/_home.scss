@@ -16,6 +16,19 @@
     @include mixins.flex(column,center,center);
     @include mixins.w-h-100;
     @include mixins.border-section();
+    &__content{
+        @include mixins.flex(row,center,center);
+        width: 70%;
+        column-gap: 24px;
+    }
+    &__image{
+        width: 50%;
+        height: 420px;
+    }
+    &__text{
+        width: 40%;
+        font-size: variables.$font-size-large;
+    }
 }
 
 .projects-section{
