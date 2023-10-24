@@ -84,10 +84,12 @@
             font-size: variables.$font-size-large;
             cursor: pointer;
             @media screen and (max-width: map-get(variables.$breakpoints, tablette)){
-                width: 8rem;
+                width: 7rem;
+                font-size: variables.$font-size-medium;
             }
             @media screen and (max-width: map-get(variables.$breakpoints, tablette)){
                 width: 10rem;
+                font-size: variables.$font-size-medium;
             }
         }
         &_link--ext{
