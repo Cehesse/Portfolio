@@ -8,12 +8,71 @@
     text-align: center;
     color: variables.$color-white;
     &_title{
- 
+        @include mixins.w-h-100;
+        color: variables.$color-tertiary;
+        font-size: 4rem;
+        text-align: center;
     }
-    &_subtitle{
-       
+}
+
+.formation{
+    &_list{
+        @include mixins.flex(column,center, center);
+        padding: 2rem 0;
+        row-gap: 2rem;
+        color: variables.$color-primary;
+        width: 90%;
     }
-    &_link{
-        
+    &_item{
+        @include mixins.flex(column,center,flex-start);
+        @include mixins.w-h-100;
+        row-gap: 0.5rem;
+        padding: 1rem;
+        border-radius: 25px;
+        border: solid 2px variables.$color-tertiary;
+        & h3{
+            font-size: variables.$font-size-large;
+            font-weight: variables.$font-weight-blod;
+        }
+        & p{
+            font-size: variables.$font-size-medium;
+            font-weight: variables.$font-weight-medium;
+        }
+    }
+}
+
+.competenceslogos{
+    &_list{
+        @include mixins.flex(row,center, center);
+        padding: 2rem;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        color: variables.$color-primary;
+        flex-wrap: wrap;
+    }
+    &_icon{
+        width: 6rem;
+        row-gap: 0.5rem;
+        padding: 1rem;
+        border-radius: 25px;
+        border: solid 2px variables.$color-tertiary;
+    }
+}
+
+.competences{
+    &_text{
+        @include mixins.flex(row,center, center);
+        padding: 2rem 0;
+        column-gap: 7rem;
+        color: variables.$color-primary;
+    }
+    &_list{
+        @include mixins.flex(column,center, center);
+        row-gap: 2rem;
+    }
+    &_item{
+        color: variables.$color-primary;
+        font-size: variables.$font-size-large;
+        font-weight: variables.$font-weight-blod;
     }
 }
