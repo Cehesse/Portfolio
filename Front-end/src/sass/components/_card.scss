@@ -21,18 +21,19 @@
     &_img{
         object-fit: cover;
         @include mixins.w-h-100;
-        padding: 1rem;
+        padding: 0.5rem;
         }
     &_title{
         padding: 0.5rem;
         text-align: center;
         font-weight: variables.$font-weight-blod;
         color: variables.$color-secondary;
-        display: none;//A supprimer si réutilisation
+        display: none; //A supprimer si réutilisation
     }
     &_text{
         padding: 0.5rem;
         text-align: center;
         color: variables.$color-tertiary;
+        font-size: variables.$font-size-large;
     }
 }

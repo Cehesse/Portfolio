@@ -11,7 +11,6 @@
         cursor: default;
     }
 }
-
 .about-section{
     @include mixins.flex(column,center,center);
     @include mixins.w-h-100;
@@ -19,19 +18,32 @@
     &_content{
         @include mixins.flex(row,center,center);
         padding: 3rem 0;
-        width: 80%;
+        column-gap: 4rem;
+        width: 90%;
+        @media screen and (max-width: map-get(variables.$breakpoints, tablette)){
+            padding: 0;
+        }
+        @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
+            @include mixins.flex(column,center,center);
+            padding: 0;
+            width: 80%;
+        }
     }
     &_description{
         @include mixins.flex(column,center,center);
-        row-gap: 4rem;
+        padding: 2rem 0;
+        row-gap: 3rem;
     }
     &_image{
-        width: 30rem;
-        height: 30rem;
+        @include mixins.flex(column,center,center);
+        @include mixins.w-h-100;
+        width: 20rem;
+        height: 20rem;
     }
     &_text{
-        width: 60%;
         font-size: variables.$font-size-large;
+        flex-wrap: wrap;
+        text-align: justify;
     }
     &_link{
         @include mixins.flex(row,flex-end,flex-end);
@@ -47,11 +59,14 @@
 }
 
 .projects-section{
-    @include mixins.w-h-100;
+    width: 90%;
     @include mixins.flex(column,center,center);
     padding-bottom: 4rem;
     column-gap: 5%;
     row-gap: 3.5rem;
+    @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
+        width: 80%;
+    }
 }
 
 .contact-section{

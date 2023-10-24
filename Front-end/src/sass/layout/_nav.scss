@@ -8,6 +8,10 @@
         column-gap: 3rem;
         font-size: variables.$font-size-medium;
         font-weight: variables.$font-weight-blod;
+        @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
+            @include mixins.flex(column,center,center);
+            row-gap: 1rem;
+        }
     }
     &_link {
         color: variables.$color-tertiary;

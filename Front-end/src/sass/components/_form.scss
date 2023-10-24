@@ -13,6 +13,10 @@
         @include mixins.flex(row,center,center);
         column-gap: 2rem;
         width: 40rem;
+        @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
+            @include mixins.flex(column,center,center);
+            row-gap: 2rem;
+        }
     }
     &_identity{
         @include mixins.flex(column,center,center);
@@ -41,7 +45,8 @@
     }
     &_button {
     border-radius: 25px; 
-    width: 12rem; 
+    width: 12rem;
+    font-size: variables.$font-size-medium; 
     color: variables.$color-tertiary;
     background-color: variables.$color-primary;
     border: solid 2px variables.$color-tertiary;

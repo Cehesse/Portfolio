@@ -19,9 +19,9 @@ function Home() {
   const breakpointColumnsObj = {
     default: 3,
     1769.98: 3,
-    1569.98: 2,
+    1569.98: 3,
     1349.98: 2,
-    1039.98: 1,
+    1023.98: 2,
     699.98: 1,
   };
 
@@ -48,7 +48,7 @@ function Home() {
             <div className="about-section_content">
                 <img className="about-section_image" src={profil} alt="Votre Portrait" />
                 <div className="about-section_description">
-                  <p className="about-section_text">Je suis un développeur en reconversion, passionné par les technologies web. J'ai suivi une formation sur Openclassroom, je me suis lancé dans des projets concrets pour mettre en pratique mes compétences. Mon portfolio reflète mon parcours et mes projets. Explorez mes réalisations dans la section projets ou mon parcours.</p>
+                  <p className="about-section_text">Je suis un développeur en reconversion, passionné par les technologies web. J'ai suivi une formation sur Openclassroom, je me suis lancé dans des projets concrets pour mettre en pratique mes compétences. Mon portfolio reflète mon parcours et mes projets.</p>
                   <Link to={`/About`}>
                   <p className="about-section_link">Mon parcours</p>
                   </Link>

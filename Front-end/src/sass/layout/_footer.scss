@@ -6,7 +6,7 @@
     @include mixins.flex(row,center,center);
     @include mixins.w-h-100;
     padding: 1rem 2%;
-    height: 10vh;
+    min-height: 10vh;
     &_text {
         font-size: variables.$font-size-medium;
         }
