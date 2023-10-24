@@ -42,10 +42,10 @@ root.render(
       <div className="App">
         <Header />
           <Routes>
-            <Route exact path="/" component={<Home />} />
-            <Route exact path="/About" component={<About />} />
-            <Route exact path="/Projects/:Number" component={<Projects />} />
-            <Route exact path="*" component={<Error />} />
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/About" element={<About />} />
+            <Route exact path="/Projects/:Number" element={<Projects />} />
+            <Route exact path="*" element={<Error />} />
           </Routes>
         <Footer />
       </div>
