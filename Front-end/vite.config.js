@@ -15,8 +15,10 @@ import VitePluginGhPages from 'vite-plugin-gh-pages';
 // ...
 
 export default defineConfig({
-  // ...
-  plugins: [
+
+    base: "/Portfolio",
+    plugins: [
+    react(),
     reactRefresh(),
     VitePluginGhPages(), // Ajoutez cette ligne
   ],
