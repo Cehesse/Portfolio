@@ -5,11 +5,13 @@
 .nav-section {
   &_links {
     @include mixins.flex(row, center, center);
+    -moz-column-gap: 3rem;
     column-gap: 3rem;
     font-size: variables.$font-size-medium;
     font-weight: variables.$font-weight-blod;
     @media screen and (max-width: map-get(variables.$breakpoints, mobile)) {
       @include mixins.flex(row, center, center);
+      -moz-column-gap: 1.5rem;
       column-gap: 1.5rem;
       font-size: variables.$font-size-small;
       padding: 1rem 0;
@@ -18,6 +20,8 @@
   &_link {
     color: variables.$color-tertiary;
     &:hover {
+      -webkit-text-decoration: 0.125rem underline solid
+        variables.$color-tertiary;
       text-decoration: 0.125rem underline solid variables.$color-tertiary;
     }
   }

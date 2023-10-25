@@ -17,6 +17,7 @@
     20.8px 20.8px 63.1px -10px rgba(0, 0, 0, 0.429),
     35px 35px 151px -10px rgba(0, 0, 0, 0.8);
   &_img {
+    -o-object-fit: cover;
     object-fit: cover;
     @include mixins.w-h-100;
     padding: 0.5rem;

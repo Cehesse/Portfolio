@@ -18,6 +18,7 @@
     @include mixins.w-h-100;
     & img {
       @include mixins.w-h-100;
+      -o-object-fit: contain;
       object-fit: contain;
       position: absolute;
     }

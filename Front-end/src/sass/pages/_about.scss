@@ -51,6 +51,7 @@
   &_list {
     @include mixins.flex(row, center, center);
     padding: 2rem;
+    -moz-column-gap: 2rem;
     column-gap: 2rem;
     row-gap: 2rem;
     flex-wrap: wrap;
@@ -68,9 +69,11 @@
   &_text {
     @include mixins.flex(row, center, center);
     padding: 2rem 0;
+    -moz-column-gap: 7rem;
     column-gap: 7rem;
     color: variables.$color-primary;
     @media screen and (max-width: map-get(variables.$breakpoints, mobile)) {
+      -moz-column-gap: 2rem;
       column-gap: 2rem;
       padding: 2rem;
     }
