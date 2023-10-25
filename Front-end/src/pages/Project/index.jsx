@@ -1,5 +1,5 @@
 import { useParams, Navigate, useNavigate } from "react-router-dom";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 import callAPI from "../../api";
 import Carousel from "../../components/Carousel";
@@ -13,7 +13,7 @@ function Project() {
   useEffect(() => {
     async function fetchData() {
       const projects = await callAPI("projects.json");
-      const project = projects.find(data => data.id === idProject);
+      const project = projects.find((data) => data.id === idProject);
       setProjectCount(projects.length);
       setData(project);
     }
@@ -51,14 +51,20 @@ function Project() {
     <main className="project-page pages">
       <section className="project-section" aria-label="Détails du projet">
         <div className="project-section_project">
-          <div className="project-section_carousel" aria-label="Images du projet">
+          <div
+            className="project-section_carousel"
+            aria-label="Images du projet"
+          >
             <Carousel slides={projectdata.pictures} />
           </div>
           <div className="project-section_description">
             <h2 className="project-section_title" aria-label="Titre du projet">
               {projectdata.title}
             </h2>
-            <p className="project-section_text" aria-label="Description du projet">
+            <p
+              className="project-section_text"
+              aria-label="Description du projet"
+            >
               {projectdata.description}
             </p>
             <div className="project-section_technologys">
@@ -72,7 +78,10 @@ function Project() {
                 />
               ))}
             </div>
-            <div className="project-section_links" aria-label="Liens externes du projet">
+            <div
+              className="project-section_links"
+              aria-label="Liens externes du projet"
+            >
               {projectdata.site !== "" && (
                 <a
                   href={projectdata.site}
@@ -100,11 +109,14 @@ function Project() {
             </div>
           </div>
         </div>
-        <div className='project-section_nav' aria-label="Navigation entre les projets">
-          <ul className='project-section_links'>
+        <div
+          className="project-section_nav"
+          aria-label="Navigation entre les projets"
+        >
+          <ul className="project-section_links">
             <li>
               <button
-                className='project-section_link project-section_link--nav'
+                className="project-section_link project-section_link--nav"
                 onClick={goToPreviousProject}
                 title="Projet précédent"
               >
@@ -113,7 +125,7 @@ function Project() {
             </li>
             <li>
               <button
-                className='project-section_link project-section_link--nav'
+                className="project-section_link project-section_link--nav"
                 onClick={goToNextProject}
                 title="Projet suivant"
               >

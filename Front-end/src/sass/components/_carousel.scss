@@ -2,49 +2,49 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
 
-.carousel{
-    @include mixins.flex(column,center,center);
-    position: relative;
-    width: 34rem;
-    height: 34rem;
-    border: solid 0.125rem variables.$color-tertiary;
-    background-color: variables.$color-white;
-    @media screen and (max-width: map-get(variables.$breakpoints, tablette)){
-        width: 23rem;
-        height: 23rem;
+.carousel {
+  @include mixins.flex(column, center, center);
+  position: relative;
+  width: 34rem;
+  height: 34rem;
+  border: solid 0.125rem variables.$color-tertiary;
+  background-color: variables.$color-white;
+  @media screen and (max-width: map-get(variables.$breakpoints, tablette)) {
+    width: 23rem;
+    height: 23rem;
+  }
+  &_img {
+    position: absolute;
+    @include mixins.w-h-100;
+    & img {
+      @include mixins.w-h-100;
+      object-fit: contain;
+      position: absolute;
     }
-    &_img{
-        position: absolute;
-        @include mixins.w-h-100;
-            & img{
-                @include mixins.w-h-100;
-                object-fit: contain;
-                position: absolute;
-            }
-    }
-    &_arrow--left{
-        position: absolute;
-        z-index: 1;
-        left: 2%;
-        top: 45%;
-        width: 4rem;
-        cursor: pointer;
-        }
-    &_arrow-right{
-        position: absolute;
-        z-index: 1;
-        right: 2%;
-        top: 45%;
-        width: 4rem;
-        cursor: pointer;
-        }
-    &_num{
-        position: absolute;
-        z-index: 1;
-        right: 50%;
-        top: 90%;
-        font-size: 1rem;
-        font-weight: variables.$font-weight-blod;
-        color: variables.$color-black;
-    }
+  }
+  &_arrow--left {
+    position: absolute;
+    z-index: 1;
+    left: 2%;
+    top: 45%;
+    width: 4rem;
+    cursor: pointer;
+  }
+  &_arrow-right {
+    position: absolute;
+    z-index: 1;
+    right: 2%;
+    top: 45%;
+    width: 4rem;
+    cursor: pointer;
+  }
+  &_num {
+    position: absolute;
+    z-index: 1;
+    right: 50%;
+    top: 90%;
+    font-size: 1rem;
+    font-weight: variables.$font-weight-blod;
+    color: variables.$color-black;
+  }
 }

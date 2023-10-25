@@ -2,21 +2,21 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
 
-.error-page{
-    @include mixins.w-h-100;
-    padding: 10rem 20%;
-    &-s1{
-    @include mixins.flex(column,center, center);
+.error-page {
+  @include mixins.w-h-100;
+  padding: 10rem 20%;
+  &-s1 {
+    @include mixins.flex(column, center, center);
     row-gap: 1rem;
     text-align: center;
-    }
-    &_title{
-        color: variables.$color-tertiary;
-    }
-    &_subtitle{
-        color: variables.$color-tertiary;
-    }
-    &_link{
-        color: variables.$color-tertiary;
-    }
+  }
+  &_title {
+    color: variables.$color-tertiary;
+  }
+  &_subtitle {
+    color: variables.$color-tertiary;
+  }
+  &_link {
+    color: variables.$color-tertiary;
+  }
 }

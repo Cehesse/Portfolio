@@ -2,38 +2,36 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
 
-.card{
-    @include mixins.flex(column,center,center);
-    position: relative;
-    @include mixins.w-h-100;
-    border-radius: 5px;
-    overflow: hidden;
-    border: 0.125rem solid variables.$color-secondary;
-    background-color: variables.$color-primary;
-    box-shadow:
-    6.1px 6.1px 4.2px -10px rgba(0, 0, 0, 0.127),
+.card {
+  @include mixins.flex(column, center, center);
+  position: relative;
+  @include mixins.w-h-100;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 0.125rem solid variables.$color-secondary;
+  background-color: variables.$color-primary;
+  box-shadow: 6.1px 6.1px 4.2px -10px rgba(0, 0, 0, 0.127),
     10px 10px 10px -10px rgba(0, 0, 0, 0.209),
     13px 13px 18.9px -10px rgba(0, 0, 0, 0.272),
     16.1px 16.1px 33.7px -10px rgba(0, 0, 0, 0.335),
     20.8px 20.8px 63.1px -10px rgba(0, 0, 0, 0.429),
-    35px 35px 151px -10px rgba(0, 0, 0, 0.8)
-  ;
-    &_img{
-        object-fit: cover;
-        @include mixins.w-h-100;
-        padding: 0.5rem;
-        }
-    &_title{
-        padding: 0.5rem;
-        text-align: center;
-        font-weight: variables.$font-weight-blod;
-        color: variables.$color-secondary;
-        display: none; //A supprimer si réutilisation
-    }
-    &_text{
-        padding: 0.5rem;
-        text-align: center;
-        color: variables.$color-tertiary;
-        font-size: variables.$font-size-large;
-    }
+    35px 35px 151px -10px rgba(0, 0, 0, 0.8);
+  &_img {
+    object-fit: cover;
+    @include mixins.w-h-100;
+    padding: 0.5rem;
+  }
+  &_title {
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: variables.$font-weight-blod;
+    color: variables.$color-secondary;
+    display: none; //A supprimer si réutilisation
+  }
+  &_text {
+    padding: 0.5rem;
+    text-align: center;
+    color: variables.$color-tertiary;
+    font-size: variables.$font-size-large;
+  }
 }

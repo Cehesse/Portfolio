@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 import arrowRight from "../../assets/img/arrow_right.webp";
 import arrowLeft from "../../assets/img/arrow_left.webp";
@@ -48,15 +48,14 @@ export default function Carousel(props) {
           aria-selected={index === indexCurrent}
         >
           {index === indexCurrent && (
-            <img
-              src={slide}
-              alt="Photo"
-              title="Photo"
-              aria-hidden={false}
-            />
+            <img src={slide} alt="Photo" title="Photo" aria-hidden={false} />
           )}
           {index === indexCurrent && slidesLength > 1 && (
-            <p className="carousel_num" aria-live="assertive" aria-atomic="true">
+            <p
+              className="carousel_num"
+              aria-live="assertive"
+              aria-atomic="true"
+            >
               {indexCurrent + 1}/{slidesLength}
             </p>
           )}

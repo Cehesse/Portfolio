@@ -2,75 +2,75 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
 
-.home-page{
-    &_section-title{
-        color: variables.$color-tertiary;
-        font-size: 3rem;
-        padding: 1rem;
-        margin-top: 1rem;
-        cursor: default;
-    }
+.home-page {
+  &_section-title {
+    color: variables.$color-tertiary;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    cursor: default;
+  }
 }
-.about-section{
-    @include mixins.flex(column,center,center);
-    @include mixins.w-h-100;
-    @include mixins.border-section();
-    &_content{
-        @include mixins.flex(row,center,center);
-        padding: 3rem 0;
-        column-gap: 4rem;
-        width: 90%;
-        @media screen and (max-width: map-get(variables.$breakpoints, tablette)){
-            padding: 0;
-        }
-        @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
-            @include mixins.flex(column,center,center);
-            padding: 2rem 0;
-            width: 80%;
-        }
-    }
-    &_description{
-        @include mixins.flex(column,center,center);
-        padding: 2rem 0;
-        row-gap: 3rem;
-    }
-    &_image{
-        @include mixins.flex(column,center,center);
-        @include mixins.w-h-100;
-        width: 20rem;
-        height: 20rem;
-    }
-    &_text{
-        font-size: variables.$font-size-large;
-        flex-wrap: wrap;
-        text-align: justify;
-    }
-    &_link{
-        @include mixins.flex(row,flex-end,flex-end);
-        font-size: variables.$font-size-large;
-        color: variables.$color-tertiary;
-        border-radius: 25px; 
-        color: variables.$color-tertiary;
-        background-color: variables.$color-primary;
-        border: solid 2px variables.$color-tertiary;
-        padding: 1rem;
-        cursor: pointer;
-    }
-}
-
-.projects-section{
+.about-section {
+  @include mixins.flex(column, center, center);
+  @include mixins.w-h-100;
+  @include mixins.border-section();
+  &_content {
+    @include mixins.flex(row, center, center);
+    padding: 3rem 0;
+    column-gap: 4rem;
     width: 90%;
-    @include mixins.flex(column,center,center);
-    padding-bottom: 4rem;
-    column-gap: 5%;
-    row-gap: 3.5rem;
-    @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
-        width: 75%;
+    @media screen and (max-width: map-get(variables.$breakpoints, tablette)) {
+      padding: 0;
     }
+    @media screen and (max-width: map-get(variables.$breakpoints, mobile)) {
+      @include mixins.flex(column, center, center);
+      padding: 2rem 0;
+      width: 80%;
+    }
+  }
+  &_description {
+    @include mixins.flex(column, center, center);
+    padding: 2rem 0;
+    row-gap: 3rem;
+  }
+  &_image {
+    @include mixins.flex(column, center, center);
+    @include mixins.w-h-100;
+    width: 20rem;
+    height: 20rem;
+  }
+  &_text {
+    font-size: variables.$font-size-large;
+    flex-wrap: wrap;
+    text-align: justify;
+  }
+  &_link {
+    @include mixins.flex(row, flex-end, flex-end);
+    font-size: variables.$font-size-large;
+    color: variables.$color-tertiary;
+    border-radius: 25px;
+    color: variables.$color-tertiary;
+    background-color: variables.$color-primary;
+    border: solid 2px variables.$color-tertiary;
+    padding: 1rem;
+    cursor: pointer;
+  }
 }
 
-.contact-section{
-    @include mixins.flex(column,center,center);
-    @include mixins.w-h-100;
-    @include mixins.border-section();
+.projects-section {
+  width: 90%;
+  @include mixins.flex(column, center, center);
+  padding-bottom: 4rem;
+  column-gap: 5%;
+  row-gap: 3.5rem;
+  @media screen and (max-width: map-get(variables.$breakpoints, mobile)) {
+    width: 75%;
+  }
+}
+
+.contact-section {
+  @include mixins.flex(column, center, center);
+  @include mixins.w-h-100;
+  @include mixins.border-section();
 }

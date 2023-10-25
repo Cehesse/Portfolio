@@ -1,10 +1,10 @@
 @keyframes step {
-    0% {
-      scale: (0%);
-      transform: translateX(50%);
-    }
-    100% {
-      transform: translateX(0%);
-      scale: (100%);
-    }
+  0% {
+    scale: (0%);
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+    scale: (100%);
+  }
 }

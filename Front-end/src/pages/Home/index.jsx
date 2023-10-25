@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Masonry from 'react-masonry-css';
-import { useEffect, useState } from 'react';
+import Masonry from "react-masonry-css";
+import { useEffect, useState } from "react";
 
 import Card from "../../components/Card";
 import Form from "../../components/Form";
@@ -31,7 +31,11 @@ function Home() {
 
   return (
     <main className="home-page pages">
-      <section id="about-section" className="about-section" aria-label="Section Présentation">
+      <section
+        id="about-section"
+        className="about-section"
+        aria-label="Section Présentation"
+      >
         <h2 className="home-page_section-title">Présentation</h2>
         <div className="about-section_content">
           <img
@@ -43,24 +47,35 @@ function Home() {
           />
           <div className="about-section_description">
             <p className="about-section_text">
-              Je suis un développeur en reconversion, passionné par les technologies web. J'ai suivi une formation sur
-              Openclassrooms, je me suis lancé dans des projets concrets pour mettre en pratique mes compétences. Mon
-              portfolio reflète mon parcours et mes projets.
+              Je suis un développeur en reconversion, passionné par les
+              technologies web. J'ai suivi une formation sur Openclassrooms, je
+              me suis lancé dans des projets concrets pour mettre en pratique
+              mes compétences. Mon portfolio reflète mon parcours et mes
+              projets.
             </p>
-            <Link to={`/About`} title="Page de présentation" aria-label="En savoir plus sur mon parcours">
+            <Link
+              to={`/About`}
+              title="Page de présentation"
+              aria-label="En savoir plus sur mon parcours"
+            >
               <h3 className="about-section_link">Mon parcours</h3>
             </Link>
           </div>
         </div>
       </section>
-      <section id="projects-section" className="projects-section" aria-label="Section Projets">
+      <section
+        id="projects-section"
+        className="projects-section"
+        aria-label="Section Projets"
+      >
         <h2 className="home-page_section-title">Projets</h2>
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="my-masonry-grid"
           columnClassName="my-masonry-grid_column"
-          aria-label="Liste de projets">
-          {datas.map(data => {
+          aria-label="Liste de projets"
+        >
+          {datas.map((data) => {
             return (
               <Card
                 key={data.id}
@@ -73,7 +88,11 @@ function Home() {
           })}
         </Masonry>
       </section>
-      <section id="contact-section" className="contact-section" aria-label="Section Contact">
+      <section
+        id="contact-section"
+        className="contact-section"
+        aria-label="Section Contact"
+      >
         <h2 className="home-page_section-title">Contact</h2>
         <Form></Form>
       </section>

@@ -3,64 +3,60 @@
 @use "../abstracts/variables";
 
 .form {
-    @include mixins.flex(column,center,center);
-    row-gap: 2rem;
-    padding: 2rem;
-    &_required{
-        color: black;
+  @include mixins.flex(column, center, center);
+  row-gap: 2rem;
+  padding: 2rem;
+  &_required {
+    color: black;
+  }
+  &_items {
+    @include mixins.flex(row, center, center);
+    column-gap: 2rem;
+    width: 40rem;
+    @media screen and (max-width: map-get(variables.$breakpoints, mobile)) {
+      @include mixins.flex(column, center, center);
+      row-gap: 2rem;
     }
-    &_items{
-        @include mixins.flex(row,center,center);
-        column-gap: 2rem;
-        width: 40rem;
-        @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
-            @include mixins.flex(column,center,center);
-            row-gap: 2rem;
-        }
+  }
+  &_identity {
+    @include mixins.flex(column, center, center);
+    row-gap: 1rem;
+  }
+  &_item {
+    @include mixins.flex(column, center, flex-start);
+    row-gap: 0.5rem;
+  }
+  &_label {
+    font-weight: variables.$font-weight-blod;
+  }
+  &_input {
+    width: 18rem;
+    padding: 10px;
+    border: px solid variables.$color-tertiary;
+    border-radius: 5px;
+    background-color: variables.$color-primary;
+    &::placeholder {
+      color: #999;
     }
-    &_identity{
-        @include mixins.flex(column,center,center);
-        row-gap: 1rem;
-    }
-    &_item{
-        @include mixins.flex(column,center,flex-start);
-        row-gap: 0.5rem;
-    }
-    &_label {
-        font-weight: variables.$font-weight-blod;
-    }
-    &_input {
-        width: 18rem;
-        padding: 10px;
-        border: px solid variables.$color-tertiary;
-        border-radius: 5px;
-        background-color: variables.$color-primary;
-        &::placeholder {
-          color: #999;
-        }
-    }
-    &_area {
-        height: 17rem;
-        width: 20rem;
-    }
-    &_button {
-    border-radius: 25px; 
+  }
+  &_area {
+    height: 17rem;
+    width: 20rem;
+  }
+  &_button {
+    border-radius: 25px;
     width: 12rem;
-    font-size: variables.$font-size-medium; 
+    font-size: variables.$font-size-medium;
     color: variables.$color-tertiary;
     background-color: variables.$color-primary;
     border: solid 2px variables.$color-tertiary;
     padding: 0.75rem;
     cursor: pointer;
-    box-shadow:
-    4.5px 4.5px 18.9px -20px rgba(0, 0, 0, 0.26),
-    12px 12px 151px -20px rgba(0, 0, 0, 0.67);
-    }
-    &_confirmation {
-        text-align: center;
-        color: variables.$color-primary;
-      }
+    box-shadow: 4.5px 4.5px 18.9px -20px rgba(0, 0, 0, 0.26),
+      12px 12px 151px -20px rgba(0, 0, 0, 0.67);
   }
-  
-
-  
+  &_confirmation {
+    text-align: center;
+    color: variables.$color-primary;
+  }
+}

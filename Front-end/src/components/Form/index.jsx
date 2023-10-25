@@ -15,12 +15,7 @@ const Form = () => {
     const UserId = import.meta.env.VITE_APP_EMAILJS_USERID;
 
     emailjs
-      .sendForm(
-        "service_s79la6l",
-        "template_xgkx39f",
-        e.target,
-        UserId
-      )
+      .sendForm("service_s79la6l", "template_xgkx39f", e.target, UserId)
       .then(
         (result) => {
           console.log("E-mail envoyé avec succès", result.text);

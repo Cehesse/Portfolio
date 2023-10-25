@@ -2,25 +2,25 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
 
-#root{
-    @include mixins.flex(column,center,center);
-    box-sizing: border-box;
-    padding: 0 variables.$padding-page-border;
-    //background: variables.$color-bg;
-    background-image: url("https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/bg-root.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
+#root {
+  @include mixins.flex(column, center, center);
+  box-sizing: border-box;
+  padding: 0 variables.$padding-page-border;
+  //background: variables.$color-bg;
+  background-image: url("https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/bg-root.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App{
-    @include mixins.flex(column,center,center);
-    @include mixins.w-h-100;
+.App {
+  @include mixins.flex(column, center, center);
+  @include mixins.w-h-100;
 }
 
-.pages{
-    @include mixins.w-h-100;
-    @include mixins.flex(column,center,center);
-    min-height: 80vh;
+.pages {
+  @include mixins.w-h-100;
+  @include mixins.flex(column, center, center);
+  min-height: 80vh;
 }
 
 *,
@@ -30,9 +30,9 @@
 }
 
 body {
-    font-family: variables.$font;
+  font-family: variables.$font;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }

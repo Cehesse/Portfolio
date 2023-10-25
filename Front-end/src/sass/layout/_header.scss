@@ -2,22 +2,21 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
 
-.header-section{
-    @include mixins.flex(row,space-between,center);
-    @include mixins.w-h-100;
-    min-height: 10vh;
-    padding: 1rem 2%;
-    @media screen and (max-width: map-get(variables.$breakpoints, mobile)){
-        @include mixins.flex(column,center,center);
-        padding: 0;
-        row-gap: 1rem;
-    }
-    &_img {
-        height: 5rem;
-        width: 5rem;
-        }
-    &_title {
-            display: none;
-        }
-
+.header-section {
+  @include mixins.flex(row, space-between, center);
+  @include mixins.w-h-100;
+  min-height: 10vh;
+  padding: 1rem 2%;
+  @media screen and (max-width: map-get(variables.$breakpoints, mobile)) {
+    @include mixins.flex(column, center, center);
+    padding: 0;
+    row-gap: 1rem;
+  }
+  &_img {
+    height: 5rem;
+    width: 5rem;
+  }
+  &_title {
+    display: none;
+  }
 }

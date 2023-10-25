@@ -1,19 +1,19 @@
 @use "sass:map";
 @use "../abstracts/variables";
 
-@mixin flex($direction: row, $justify:center, $align: center){
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+@mixin flex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
-@mixin border-section(){
-    border-top: solid 0.125rem variables.$color-tertiary;
-    border-bottom: solid 0.125rem variables.$color-tertiary;
+@mixin border-section() {
+  border-top: solid 0.125rem variables.$color-tertiary;
+  border-bottom: solid 0.125rem variables.$color-tertiary;
 }
 
-@mixin w-h-100(){
-    width: 100%;
-    height: 100%;
+@mixin w-h-100() {
+  width: 100%;
+  height: 100%;
 }
