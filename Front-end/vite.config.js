@@ -5,9 +5,9 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/Portfolio",
   plugins: [react()],
-  /*   resolve: {
+  resolve: {
     alias: {
       "./runtimeConfig": "./runtimeConfig.browser",
     },
-  }, */
+  },
 });
