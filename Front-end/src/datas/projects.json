@@ -26,7 +26,7 @@
       "https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/2/Mobile.webp?raw=true",
       "https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/2/Mobile_2.webp?raw=true"
     ],
-    "description": "OhMyFood est une jeune entreprise dans le secteur de la restauration qui ambitionne de mettre en place une plateforme web répertoriant les menus proposés par des restaurants haut de gamme. En tant que dévellopeur, ma mission consistait à concrétiser le site en suivant les directives fournies par l'équipe de conception UX, qui avait élaboré des maquettes pour le projet.",
+    "description": "OhMyFood est une jeune entreprise dans le secteur de la restauration qui ambitionne de mettre en place une plateforme web répertoriant les menus proposés par des restaurants haut de gamme. En tant que développeur, ma mission consistait à concrétiser le site en suivant les directives fournies par l'équipe de conception UX, qui avait élaboré des maquettes pour le projet.",
     "site": "https://cehesse.github.io/Oh_my_food/",
     "github": "https://github.com/Cehesse/Oh_my_food",
     "technologys": [
@@ -73,7 +73,7 @@
   {
     "id": "5",
     "title": "ARGENTBANK",
-    "text": "Chez vous, partout et ailleurs",
+    "text": "Open a savings account with Argent Bank today!",
     "cover": "https://raw.githubusercontent.com/Cehesse/Portfolio/main/Front-end/src/assets/img/5/Logo.webp",
     "pictures": [
       "https://github.com/Cehesse/Portfolio/blob/main/Front-end/src/assets/img/5/Home.webp?raw=true",

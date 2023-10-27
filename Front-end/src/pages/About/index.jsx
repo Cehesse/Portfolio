@@ -2,7 +2,7 @@ function About() {
   const formations = [
     {
       id: 1,
-      titre: "Formation integrateur web",
+      titre: "Formation intégrateur web",
       lieu: "Openclassrooms",
       annee: "2023",
     },
@@ -111,7 +111,7 @@ function About() {
     },
     {
       id: 2,
-      nom: "Méthodes agile",
+      nom: "Méthodes agiles",
     },
     {
       id: 3,

@@ -25,8 +25,10 @@ function Project() {
     const nextId = parseInt(idProject, 10) + 1;
     if (nextId > projectCount) {
       navigate(`/Projects/1`);
+      window.scroll(0, 0);
     } else {
       navigate(`/Projects/${nextId}`);
+      window.scroll(0, 0);
     }
   };
 
@@ -34,8 +36,10 @@ function Project() {
     const previousId = parseInt(idProject, 10) - 1;
     if (previousId >= 1) {
       navigate(`/Projects/${previousId}`);
+      window.scroll(0, 0);
     } else {
       navigate(`/Projects/${projectCount}`);
+      window.scroll(0, 0);
     }
   };
 
@@ -44,7 +48,7 @@ function Project() {
   }
 
   if (projectdata === undefined) {
-    return <Navigate to="/Erreur" />;
+    return <Navigate to="/Error" />;
   }
 
   return (
